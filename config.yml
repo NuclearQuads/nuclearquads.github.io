@@ -1,3 +1,5 @@
 theme: jekyll-theme-minimal
 title: NuclearQuads
+name: NuclearQuads
 description: Timers, ELRS, Unlimited Power!
+title-heading: false
