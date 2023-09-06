@@ -10,13 +10,10 @@ sudo raspi-config nonint do_spi 0
 echo "[all]
 dtparam=i2c_baudrate=75000
 dtoverlay=miniuart-bt
-core_freq=250
 dtoverlay=act-led,gpio=24
 dtparam=act_led_trigger=heartbeat
 dtoverlay=gpio-shutdown,gpio_pin=18,debounce=5000
-[pi4]
-core_freq=500
-enable_uart=1" | sudo tee -a /boot/config.txt
+core_freq=250" | sudo tee -a /boot/config.txt
 
 cd ~
 wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.0.0-beta.4 -O temp.zip
