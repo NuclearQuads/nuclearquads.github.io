@@ -4,6 +4,8 @@
 
 Check your NuclearHazard PCB version, which should be printed on the PCB. So far I've sold Version 3 and Version 4. The cases for each are slightly different. [This](https://cad.onshape.com/documents/c21f8ac03c166bed0d6faeab/w/4bf3b280307091cb20025cb6/e/bbe83f4e5cd978acfdd07828) is the project where the case is maintained. Find the case version number with your PCB version. Version 3 also has an option for a 40mm or 50mm fan. To download, navigate to the correct version number folder on the bottom bar, then right click the "NuclearHazard vX" tab. Click Export. Check "Export unique parts as individual files". Click Export.
 
+When importing the lid into your slicer, it's best to turn it upside down to avoid needing supports.
+
 Print with support only on the completely horizontal overhangs. The PrusaSlicer setting for this is "Overhang threshold". Set it to 1. Using a "Top/bottom contact Z distance" of twice your layer height will make the supports easy to remove.
 
 ### Case Installation
