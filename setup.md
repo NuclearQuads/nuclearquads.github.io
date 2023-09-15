@@ -46,4 +46,4 @@ This setup will do the following:
 
 The default passwords are on the [Quick Reference](quicksheet.md) page.
 
-Run each block in [this file](pisetup.sh) and check for errors as you go. If there are any errors, let me know so I can fix them, but also a quick google search should easily solve most of them.
+Run each block in [this file](pisetup.md) and check for errors as you go. If there are any errors, let me know so I can fix them, but also a quick google search should easily solve most of them.
