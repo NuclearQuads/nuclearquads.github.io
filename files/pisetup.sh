@@ -1,4 +1,5 @@
-sudo apt update && sudo apt upgrade -y
+sudo apt update
+sudo apt upgrade -y
 
 sudo apt install python3-dev libffi-dev python3-smbus build-essential python3-pip git scons swig python3-rpi.gpio default-jdk-headless libjpeg-dev libopenjp2-7-dev -y
 
@@ -7,8 +8,7 @@ sudo raspi-config nonint do_i2c 0
 sudo raspi-config nonint do_ssh 0
 sudo raspi-config nonint do_spi 0
 
-echo "[all]
-dtparam=i2c_baudrate=75000
+echo "dtparam=i2c_baudrate=75000
 dtoverlay=miniuart-bt
 dtoverlay=act-led,gpio=24
 dtparam=act_led_trigger=heartbeat
