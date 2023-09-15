@@ -34,9 +34,7 @@ Suggested POE Splitter links:
 
 # Software Setup
 
-The suggested configuration for a Pi can be found <a href="files/pisetup.sh">here</a>.
-
-This will do the following:
+This setup will do the following:
 
 - Install prerequisites
 
@@ -44,14 +42,8 @@ This will do the following:
 
 - Install RotorHazard server
 
-- Set up the Pi to act as a wifi access point (good for practice, but not events)
+- Set up the Pi to act as a wifi access point (good for practice, but maybe not for events)
 
-  - SSID: NuclearHazard Password: wegozoom
+The default passwords are on the [Quick Reference](quicksheet.md) page.
 
-  - Can be accessed (SSH or RH UI) with 10.20.1.1
-
-The RotorHazard UI's admin page will be using the default username and password (admin, rotorhazard)
-
-To run this file with one command:
-
-wget https://nuclearquads.github.io/files/pisetup.sh -O - | sh
+Run each block in [this file](pisetup.sh) and check for errors as you go. If there are any errors, let me know so I can fix them, but also a quick google search should easily solve most of them.

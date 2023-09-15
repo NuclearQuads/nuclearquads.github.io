@@ -53,4 +53,4 @@ cd Raspberry-Pi-Automated-WiFi-Access-Point
 sudo chmod +x setup.sh
 ./setup.sh -s NuclearHazard -p wegozoom
 
-echo "please reboot"
+sudo reboot
