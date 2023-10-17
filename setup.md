@@ -34,6 +34,8 @@ Suggested POE Splitter links:
 
 # Software Setup
 
+Run each block (the whole block) in [this file](pisetup.md) and check for errors as you go. If there are any errors, let me know so I can fix them, but also a quick google search should easily solve most of them.
+
 This setup will do the following:
 
 - Install prerequisites
@@ -45,5 +47,3 @@ This setup will do the following:
 - Set up the Pi to act as a wifi access point (good for practice, but maybe not for events)
 
 The default passwords are on the [Quick Reference](quicksheet.md) page.
-
-Run each block in [this file](pisetup.md) and check for errors as you go. If there are any errors, let me know so I can fix them, but also a quick google search should easily solve most of them.

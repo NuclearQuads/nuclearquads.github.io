@@ -1,3 +1,5 @@
+`set -eo pipefail`
+
 `sudo apt update`\
 `sudo apt upgrade -y`
 
@@ -16,7 +18,7 @@
 `core_freq=250" | sudo tee -a /boot/config.txt`
 
 `cd ~`\
-`wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.0.0-beta.4 -O temp.zip`\
+`wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.0.0-beta.5 -O temp.zip`\
 `unzip temp.zip`\
 `mv RotorHazard-4.0.0-beta.4 RotorHazard`\
 `rm temp.zip`\
