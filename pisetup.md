@@ -1,3 +1,5 @@
+# Pi Setup Script
+
 `sudo apt update`\
 `sudo apt upgrade -y`
 

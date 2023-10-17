@@ -1,4 +1,6 @@
-# Hardware Setup
+# Setup
+
+## Hardware Setup
 
 ### Case Printing
 
@@ -22,17 +24,9 @@ Some of the RX carrier cards included with Version 3 and 4 need to be inserted b
 
 Make sure the pins are aligned when installing the Pi. It's easy to be off by one pin, and that could cause catastrophic damage to your Pi or NuclearHazard. Press the Pi all the way down.
 
-### POE
+## Software Setup
 
-Watch the video [here](). 
-
-Suggested POE Splitter links:
-
-[aliexpress](https://www.aliexpress.us/item/3256804960597428.html)
-
-[amazon](https://www.amazon.com/Splitter-Compliant-Surveillance-5-5x2-1mm-PS5712TG/dp/B08HS4NT13/)
-
-# Software Setup
+Start with a modern, fresh Raspberry Pi OS installation. [Some instructions here.](piossetup.md)
 
 Run each block (the whole block) in [this file](pisetup.md) and check for errors as you go. If there are any errors, let me know so I can fix them, but also a quick google search should easily solve most of them.
 
@@ -47,3 +41,19 @@ This setup will do the following:
 - Set up the Pi to act as a wifi access point (good for practice, but maybe not for events)
 
 The default passwords are on the [Quick Reference](quicksheet.md) page.
+
+### POE
+
+Watch the video [here](). 
+
+Suggested POE Splitter links:
+
+[aliexpress](https://www.aliexpress.us/item/3256804960597428.html)
+
+[amazon](https://www.amazon.com/Splitter-Compliant-Surveillance-5-5x2-1mm-PS5712TG/dp/B08HS4NT13/)
+
+### LED Strip
+
+The pinout for the LED strip connector is like this.
+
+![LED Strip Pinout](images/led.jpg)
