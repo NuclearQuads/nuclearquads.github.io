@@ -1,5 +1,3 @@
-`set -eo pipefail`
-
 `sudo apt update`\
 `sudo apt upgrade -y`
 
