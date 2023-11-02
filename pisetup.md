@@ -7,7 +7,7 @@ sudo apt upgrade -y
 sudo apt install dhcpcd5 python3.11-venv python3-dev libffi-dev python3-smbus build-essential python3-pip git scons swig python3-rpi.gpio default-jdk-headless libjpeg-dev libopenjp2-7-dev -y
 ```
 
-Note: As of this writing, raspi-config's nonint is broken so when running this step, use the UI to select 'no' then 'yes'.
+Note: As of this writing, raspi-config's nonint is broken so when running the step below, use the UI to select 'no' then 'yes'.
 
 ```
 sudo raspi-config nonint do_serial 2
@@ -25,9 +25,9 @@ core_freq=250" | sudo tee -a /boot/config.txt
 ```
 ```
 cd ~
-wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.0.0-beta.5 -O temp.zip
+wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.0.0 -O temp.zip
 unzip temp.zip
-mv RotorHazard-4.0.0-beta.5 RotorHazard
+mv RotorHazard-4.0.0 RotorHazard
 rm temp.zip
 cd ~/RotorHazard/src/server
 cp config-dist.json config.json
