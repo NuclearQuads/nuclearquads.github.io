@@ -2,15 +2,16 @@
 
 - Wifi:
     - SSID: `NuclearHazard`
-    - Password: `wegozoom`
-- SSH Command Line: 
-    - Username: `pi`
-    - Password: `raspberry`
-- RH Admin: 
-    - Username: `admin`
-    - Password: `rotorhazard`
+    - Password: `nuclearhazard`
+- SSH Command Line:
+    - Username: `NuclearHazard`
+    - Password: `nuclearhazard`
+- RH Admin:
+    - Username: `NuclearHazard`
+    - Password: `nuclearhazard`
 
-## Address when connected to Pi's wifi
+## Address when connected to the NuclearHazard wifi
 
-`10.20.1.1`
+Use this to connect with SSH or to access the web interface.
 
+`10.42.0.1`

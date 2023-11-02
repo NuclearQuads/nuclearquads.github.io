@@ -1,0 +1,108 @@
+#!/bin/bash
+# Modified from km4ack's version
+
+#check if run as root
+who=$(whoami)
+if [ $who == "root" ]
+then
+echo ""
+else
+echo "Script should be run as root"
+echo "sudo autohotspotN-setup"
+fi
+
+#check if running buster
+#and grab different script if true
+BUSTER=$(cat /etc/os-release | grep -i buster)
+
+if [ -z "$BUSTER" ]
+then
+echo ""
+else
+wget https://raw.githubusercontent.com/km4ack/pi-scripts/master/autohotspot-buster
+chmod +x autohotspot-buster
+./autohotspot-buster
+rm autohotspotN-setup
+exit 0
+fi
+
+#install hostapd, dnsmasq
+sudo apt-get install -y hostapd
+sudo apt-get install -y dnsmasq
+
+#stop both services
+sudo systemctl disable hostapd
+sudo systemctl disable dnsmasq
+
+mkdir -p $HOME/temp
+
+cd $HOME/temp
+
+wget http://www.raspberryconnect.com/images/Autohotspot/autohotspot-95-4/hostapd.txt
+
+#set new hotspot passwd
+sed -i "s/wpa_passphrase=1234567890/wpa_passphrase=nuclearhazard/" $HOME/temp/hostapd.txt
+#set country to US
+sed -i 's/country_code=GB/country_code=US/' $HOME/temp/hostapd.txt
+
+#move hostapd to correct location
+sudo mv $HOME/temp/hostapd.txt /etc/hostapd/hostapd.conf
+
+sudo sed -i s'/#DAEMON_CONF=""/DAEMON_CONF="\/etc\/hostapd\/hostapd.conf"/' /etc/default/hostapd
+sudo sed -i s'/DAEMON_OPTS=""/#DAEMON_OPTS=""/' /etc/default/hostapd
+
+#add needed info to dnsmasq.conf
+echo "#AutoHotspot config" | sudo tee -a /etc/dnsmasq.conf
+echo "interface=wlan0"| sudo tee -a /etc/dnsmasq.conf
+echo "bind-dynamic" | sudo tee -a /etc/dnsmasq.conf
+echo "server=8.8.8.8" | sudo tee -a /etc/dnsmasq.conf
+echo "domain-needed" | sudo tee -a /etc/dnsmasq.conf
+echo "bogus-priv" | sudo tee -a /etc/dnsmasq.conf
+echo "dhcp-range=10.10.10.150,10.10.10.200,255.255.255.0,12h" | sudo tee -a /etc/dnsmasq.conf
+echo "#Set up redirect for email.com" | sudo tee -a /etc/dnsmasq.conf
+echo "dhcp-option=3,10.10.10.10" | sudo tee -a /etc/dnsmasq.conf
+echo "address=/email.com/10.10.10.10" | sudo tee -a /etc/dnsmasq.conf
+
+sudo mv /etc/network/interfaces /etc/network/interfaces.org
+
+echo "source-directory /etc/network/interfaces.d" | sudo tee -a /etc/network/interfaces
+echo "nohook wpa_supplicant" | sudo tee -a /etc/dhcpcd.conf
+
+#setup ip forward
+sudo sed 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/' /etc/sysctl.conf
+
+cd $HOME/temp
+
+wget http://www.raspberryconnect.com/images/autohotspotN/autohotspotn-95-4/autohotspot-service.txt
+
+#create autohotspot service file
+sudo mv autohotspot-service.txt /etc/systemd/system/autohotspot.service
+
+#start autohotspot service
+sudo systemctl enable autohotspot.service
+
+#check if iw installed. install if not
+
+iwcheck=$(dpkg --get-selections | grep -w "iw")
+if [ -z "iw" ]
+then
+sudo apt-get install iw
+fi
+
+#install autohotspot script
+cd $HOME/temp
+wget http://www.raspberryconnect.com/images/autohotspotN/autohotspotn-95-4/autohotspotN.txt
+#mod ip address for our custom setup
+sed -i 's/192.168.50.5/10.20.1.1/' autohotspotN.txt
+sudo mv autohotspotN.txt /usr/bin/autohotspotN
+sudo chmod +x /usr/bin/autohotspotN
+
+#add shack wifi to wpa_supplicant.conf
+echo "network={" | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf
+echo "ssid=\"Little House On The Quarry\"" | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf
+echo "psk=\"heckifiknow\"" | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf
+echo "key_mgmt=WPA-PSK" | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf
+echo "}" | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf
+
+#remove hostapd masked error on first run of hotspot
+sudo systemctl unmask hostapd

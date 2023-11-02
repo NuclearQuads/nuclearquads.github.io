@@ -7,7 +7,7 @@ Flash the SD card with [Raspberry Pi imager](https://www.raspberrypi.com/softwar
 ## Select the OS
 If you never plan to plug in a monitor, use a Lite version.
 
-If you're using a Pi Zero, 1, or 2, you need a 32-bit OS. Otherwise use 64-bit.
+If you're using a Pi Zero 1, Pi 1, or Pi 2, you need a 32-bit OS. Otherwise use 64-bit.
 
 ## Select the options
 
