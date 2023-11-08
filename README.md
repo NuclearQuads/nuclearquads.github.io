@@ -8,13 +8,9 @@ Currently taking pre-orders, expected to ship end of January 2024!
 
 ## [Pre-Assembled introduction video](https://youtu.be/Zz216BKYj9Y)
 
-</br>
-
 # Pre-Order Info:
 
 The timers are not in stock or even produced yet. Since it's hard know how many to get manufactured, I will take preorders through the end of September. Then I'll submit them for manufacturing. I expect to have them ready to ship by January 31, 2024.
-
-</br>
 
 # [Store](https://nuclearquads.etsy.com):
 
