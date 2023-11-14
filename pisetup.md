@@ -1,4 +1,9 @@
 # Pi Setup Script
+
+Note: The username on your Pi OS installation must be NuclearHazard.
+
+This is written for the version of Pi OS released on 2023-10-10. Other versions probably will give errors.
+
 ```bash
 sudo apt update
 sudo apt upgrade -y
