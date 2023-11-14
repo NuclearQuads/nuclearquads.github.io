@@ -74,6 +74,7 @@ echo iptables-persistent iptables-persistent/autosave_v4 boolean true | sudo deb
 echo iptables-persistent iptables-persistent/autosave_v6 boolean true | sudo debconf-set-selections
 sudo apt-get -y install iptables-persistent
 ```
+Skip these next two sections if you don't want it to make the NuclearHazard wifi.
 ```
 echo "if iwgetid -r | grep -q .; then
     echo "Wi-Fi network found. Not creating a hotspot."
