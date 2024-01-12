@@ -1,8 +1,10 @@
-# Pi Setup Script
+# Pi Setup Commands
+
+If there are any errors, let me know so I can fix them, but also a quick google search should easily solve most of them.
 
 Note: The username on your Pi OS installation must be NuclearHazard.
 
-This is written for the version of Pi OS released on 2023-10-10. Other versions probably will give errors.
+This is written for the version of Pi OS released on 2023-10-10 (Bookworm?). Older versions probably will give errors.
 
 ```bash
 sudo apt update
@@ -30,6 +32,10 @@ core_freq=250" | sudo tee -a /boot/config.txt
 ```
 ```
 cd ~
+python -m venv .venv
+echo "
+VIRTUAL_ENV_DISABLE_PROMPT=1
+source ~/.venv/bin/activate" | sudo tee -a ~/.bashrc
 wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.0.0 -O temp.zip
 unzip temp.zip
 mv RotorHazard-4.0.0 RotorHazard
@@ -42,6 +48,7 @@ sed -i '/"GENERAL": {/a"SHUTDOWN_BUTTON_GPIOPIN": 19,' config.json
 sed -i '/"SHUTDOWN_BUTTON_GPIOPIN": 19,/a"SHUTDOWN_BUTTON_DELAYMS": 2500,' config.json
 ```
 ```
+cd ~/
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt

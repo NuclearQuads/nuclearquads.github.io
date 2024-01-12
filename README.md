@@ -2,7 +2,7 @@
 
 Currently taking pre-orders of full-size timer kits, expected to ship end of January 2024!
 
-Fully assembled timers coming end of January 2024 also!
+Fully assembled Atom and Full-size timers coming end of January 2024 also!
 
 ## [NuclearHazard Kit Assembly and Configuration](kitsetup.md)
 Walk through assembling and configuring your kit.
