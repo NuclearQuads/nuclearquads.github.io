@@ -2,11 +2,13 @@
 
 ## Case Printing
 
-Check your NuclearHazard PCB version, which should be printed on the PCB. The case for version 3 is slightly different than 4+. [This the project where the case is maintained.](https://cad.onshape.com/documents/c21f8ac03c166bed0d6faeab/w/4bf3b280307091cb20025cb6/e/bbe83f4e5cd978acfdd07828)  Find the case version number with your PCB version. Version 3 also has an option for a 40mm or 50mm fan. To download, navigate to the correct version number folder on the bottom bar, then right click the "NuclearHazard vX" tab. Click Export. Check "Export unique parts as individual files". Click Export.
+### [Get the case from here](https://cad.onshape.com/documents/c21f8ac03c166bed0d6faeab/w/4bf3b280307091cb20025cb6/e/bbe83f4e5cd978acfdd07828)
 
-When importing the lid into your slicer, it's best to turn it upside down to avoid needing supports.
+Check your NuclearHazard PCB version, which should be printed on the PCB. The case for version 3 is slightly different than 4+. The link above takes you to the onshape project where the case is always up to date. Find the case version number with your PCB version. Version 3 also has an option for a 40mm or 50mm fan. To download, navigate to the correct version number folder on the **bottom bar**, then right click the "NuclearHazard vX" tab. Click Export. Check "Export unique parts as individual files". Click Export.
 
-Print with support only on the completely horizontal overhangs. The PrusaSlicer setting for this is "Overhang threshold". Set it to 1. Using a "Top/bottom contact Z distance" of twice your layer height will make the supports easy to remove.
+When importing the **lid** into your slicer, it's best to turn it upside down to avoid needing supports.
+
+Print with support only on the completely horizontal overhangs. The PrusaSlicer setting for this is "Overhang threshold". Set it to 1. Using a "Top/bottom contact Z distance" of twice your layer height (0.4mm for 0.2mm layer height) will make the supports easy to remove.
 
 ## Case Installation
 
@@ -46,12 +48,11 @@ If you used my script to set up the Pi, update by powering on in range of the wi
 
 If you need to update over the Pi's "NuclearHazard" hotspot, download the RotorHazard zip, upload it as temp.zip with your SSH program (cyberduck/filezilla/winscp) then use the same updating instructions minus the wget command.
 
-
 ## POE
 
-Watch the video [here](). 
+Watch the video [here](https://www.youtube.com/watch?v=APZOm1ioYCY). 
 
-Suggested POE Splitter links:
+Suggested POE Splitter:
 
 [aliexpress](https://www.aliexpress.us/item/3256804960597428.html)
 
