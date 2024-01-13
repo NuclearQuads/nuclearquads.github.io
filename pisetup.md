@@ -31,29 +31,25 @@ dtoverlay=gpio-shutdown,gpio_pin=19,debounce=5000
 core_freq=250" | sudo tee -a /boot/config.txt
 ```
 ```
-cd ~
 python -m venv .venv
 echo "
 VIRTUAL_ENV_DISABLE_PROMPT=1
 source ~/.venv/bin/activate" | sudo tee -a ~/.bashrc
-wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.0.0 -O temp.zip
+source ~/.venv/bin/activate
+```
+```
+wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.0.1 -O temp.zip
 unzip temp.zip
-mv RotorHazard-4.0.0 RotorHazard
+mv RotorHazard-4.0.1 RotorHazard
 rm temp.zip
 cd ~/RotorHazard/src/server
+pip install -r requirements.txt
+pip install pillow
 cp config-dist.json config.json
 sed -i 's/"ADMIN_USERNAME": "admin"/"ADMIN_USERNAME": "NuclearHazard"/' config.json
 sed -i 's/"ADMIN_PASSWORD": "rotorhazard"/"ADMIN_PASSWORD": "nuclearhazard"/' config.json
 sed -i '/"GENERAL": {/a"SHUTDOWN_BUTTON_GPIOPIN": 19,' config.json
 sed -i '/"SHUTDOWN_BUTTON_GPIOPIN": 19,/a"SHUTDOWN_BUTTON_DELAYMS": 2500,' config.json
-```
-```
-cd ~/
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-pip install pillow
-deactivate
 cd ~
 ```
 ```
@@ -63,7 +59,7 @@ After=multi-user.target
 [Service]
 User=NuclearHazard
 WorkingDirectory=/home/NuclearHazard/RotorHazard/src/server
-ExecStart=/home/NuclearHazard/RotorHazard/src/server/venv/bin/python server.py
+ExecStart=/home/NuclearHazard/.venv/bin/python server.py
 [Install]
 WantedBy=multi-user.target" | sudo tee -a /lib/systemd/system/rotorhazard.service
 ```
