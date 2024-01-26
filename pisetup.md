@@ -4,20 +4,16 @@ If there are any errors, let me know so I can fix them, but also a quick google 
 
 Note: The username on your Pi OS installation must be NuclearHazard.
 
-This is written for the version of Pi OS released on 2023-10-10 (Bookworm?). Older versions probably will give errors.
+This is written for the version of Pi OS released on 2023-10-10 (Bookworm?) and Pi 3/4/5/Zero2 hardware. Older versions probably will give errors.
 
 ```bash
 sudo apt update
 sudo apt upgrade -y
-```
-```
 sudo apt install dhcpcd5 python3.11-venv python3-dev libffi-dev python3-smbus build-essential python3-pip git scons swig python3-rpi.gpio default-jdk-headless libjpeg-dev libopenjp2-7-dev -y
 ```
-
-Note: As of this writing, raspi-config's nonint is broken so when running the step below, use the UI to select 'no' then 'yes'.
-
 ```
-sudo raspi-config nonint do_serial 2
+sudo raspi-config nonint do_serial_hw 0
+sudo raspi-config nonint do_serial_cons 1
 sudo raspi-config nonint do_i2c 0
 sudo raspi-config nonint do_ssh 0
 sudo raspi-config nonint do_spi 0
@@ -27,16 +23,32 @@ echo "dtparam=i2c_baudrate=75000
 dtoverlay=miniuart-bt
 dtoverlay=act-led,gpio=24
 dtparam=act_led_trigger=heartbeat
-dtoverlay=gpio-shutdown,gpio_pin=19,debounce=5000
-core_freq=250" | sudo tee -a /boot/config.txt
+
+[pi5]
+dtoverlay=uart0-pi5
+dtoverlay=i2c1-pi5
+
+[pi4]
+dtoverlay=gpio-shutdown,gpio_pin=18,debounce=5000
+
+[pi3]
+dtoverlay=gpio-shutdown,gpio_pin=18,debounce=5000
+core_freq=250
+
+[pi02]
+dtoverlay=gpio-shutdown,gpio_pin=18,debounce=5000
+core_freq=250
+
+[all]" | sudo tee -a /boot/config.txt
 ```
 ```
-python -m venv .venv
+python -m venv --system-site-packages .venv
 echo "
 VIRTUAL_ENV_DISABLE_PROMPT=1
 source ~/.venv/bin/activate" | sudo tee -a ~/.bashrc
 source ~/.venv/bin/activate
 ```
+For Pi 5 until a new RH release, use the master git branch by running [this block](pi5.md) instead of the one below.
 ```
 wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.0.1 -O temp.zip
 unzip temp.zip
