@@ -18,6 +18,7 @@ sudo raspi-config nonint do_i2c 0
 sudo raspi-config nonint do_ssh 0
 sudo raspi-config nonint do_spi 0
 ```
+For some reason it seems /boot/config.txt has been moved in some Pi OS versions. If you have problems connecting to the receivers/STM, rerun this block but change the path in the last line to `/boot/config.txt`.
 ```
 echo "dtparam=i2c_baudrate=75000
 dtoverlay=miniuart-bt
@@ -39,7 +40,7 @@ core_freq=250
 dtoverlay=gpio-shutdown,gpio_pin=18,debounce=5000
 core_freq=250
 
-[all]" | sudo tee -a /boot/config.txt
+[all]" | sudo tee -a /boot/firmware/config.txt
 ```
 ```
 python -m venv --system-site-packages .venv
