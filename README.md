@@ -28,4 +28,4 @@ All items other than pre-assembled timers are currently available for preorder. 
 
 [RXs for Kit](https://nuclearquads.etsy.com/listing/1452495470/pre-order-rx5808-for-nuclearhazard-timer?utm_source=Copy&utm_medium=ListingManager&utm_campaign=Share&utm_term=so.lmsm&share_time=1694027785191) (qty 1, buy 8 for 8 channel timing)
 
-[Case for Kit](https://nuclearquads.etsy.com/listing/1475957785/pre-order-case-for-nuclearhazard-timer?utm_source=Copy&utm_medium=ListingManager&utm_campaign=Share&utm_term=so.lmsm&share_time=1694027823010) (or [print your own](https://nuclearquads.github.io/setup.html#case-printing))
+[Case for Kit](https://nuclearquads.etsy.com/listing/1475957785/pre-order-case-for-nuclearhazard-timer?utm_source=Copy&utm_medium=ListingManager&utm_campaign=Share&utm_term=so.lmsm&share_time=1694027823010) (or [print your own](https://nuclearquads.github.io/kitsetup.html#case-printing))
