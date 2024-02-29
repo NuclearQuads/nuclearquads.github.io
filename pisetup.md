@@ -49,7 +49,7 @@ VIRTUAL_ENV_DISABLE_PROMPT=1
 source ~/.venv/bin/activate" | sudo tee -a ~/.bashrc
 source ~/.venv/bin/activate
 ```
-For Pi 5 until a new RH release, use the master git branch by running [this block](pi5.md) instead of the one below.
+For Pi 5 until a new RH release, use the beta by running [this block](pi5.md) instead of the one below.
 ```
 wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.0.1 -O temp.zip
 unzip temp.zip
