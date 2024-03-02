@@ -28,6 +28,7 @@ dtparam=act_led_trigger=heartbeat
 [pi5]
 dtoverlay=uart0-pi5
 dtoverlay=i2c1-pi5
+dtoverlay=uart3-pi5
 
 [pi4]
 dtoverlay=gpio-shutdown,gpio_pin=18,debounce=5000
