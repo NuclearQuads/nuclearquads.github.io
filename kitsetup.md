@@ -5,6 +5,7 @@
 Along with the kit, you should also have the following ready to use:
 - Raspberry Pi (Version 3 or Zero 2 minimum)
 - 8+GB Micro SD card for the Pi (instructions for installing the OS below)
+- 1-8 RX5808s
 
 ## Case Printing
 
@@ -25,7 +26,12 @@ Note: the battery slot is not currently used by the software.
 
 ## RX Installation
 
-To add RXs on your own, I suggest ordering [here](https://www.aliexpress.us/item/2255800077584960.html) or a similar listing. Start by tinning one pad of the RX carrier with solder. **Be very careful to not get any solder on the connector pads!** Align all the pads of the RX and reheat the tinned pad to reflow the solder. Keep holding the RX aligned until the solder is hardened. That'll hold it still while you solder the rest of the pads.
+Since I no longer sell RXs with the NuclearHazard kits, you'll have to order and solder your own. The following sellers have been reliable for me and haven't needed the SPI mod.
+- [IC module (CN)](https://www.aliexpress.us/item/3256806084478140.html)
+- [diymore Alice1101983 (CN)](https://www.aliexpress.us/item/2251832717229710.html)
+- [DiyBox Electronic (US)](https://www.ebay.com/itm/115887932678)
+
+Start by tinning one pad of the RX carrier with solder. **Be very careful to not get any solder on the connector pads!** Align all the pads of the RX and reheat the tinned pad to reflow the solder. Keep holding the RX aligned until the solder is hardened. That'll hold it still while you solder the rest of the pads.
 
 Some of the RX carrier cards included with Version 3 and 4 need to be inserted backwards. They can be identified by the bigger alignment dot, or if the RXs aren't changing channels. This has since been fixed and the carrier cards included with Version 5+ can be aligned normally.
 

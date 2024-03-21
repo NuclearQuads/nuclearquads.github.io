@@ -1,7 +1,7 @@
 ```
-wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.1.0-beta.1 -O temp.zip
+wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.1.0-beta.2 -O temp.zip
 unzip temp.zip
-mv RotorHazard-4.1.0-beta.1 RotorHazard
+mv RotorHazard-4.1.0-beta.2 RotorHazard
 rm temp.zip
 cd ~/RotorHazard/src/server
 pip install -r requirements.txt
