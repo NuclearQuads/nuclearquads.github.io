@@ -32,6 +32,7 @@ dtoverlay=uart3-pi5
 
 [pi4]
 dtoverlay=gpio-shutdown,gpio_pin=18,debounce=5000
+dtoverlay=uart4
 
 [pi3]
 dtoverlay=gpio-shutdown,gpio_pin=18,debounce=5000
