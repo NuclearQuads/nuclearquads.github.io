@@ -9,7 +9,7 @@ This is written for the version of Pi OS released on 2023-10-10 (Bookworm?) and 
 ```bash
 sudo apt update
 sudo apt upgrade -y
-sudo apt install dhcpcd5 python3.11-venv python3-dev libffi-dev python3-smbus build-essential python3-pip git scons swig python3-rpi.gpio default-jdk-headless libjpeg-dev libopenjp2-7-dev -y
+sudo apt install dhcpcd5 python3.11-venv python3-dev libffi-dev python3-smbus build-essential python3-pip git scons swig python3-rpi.gpio default-jdk-headless libjpeg-dev libopenjp2-7-dev esptool -y
 ```
 ```
 sudo raspi-config nonint do_serial_hw 0

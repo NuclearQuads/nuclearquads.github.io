@@ -24,15 +24,30 @@ rm -r VRxC_ELRS
 rm VRxC_ELRS.zip
 ```
 
+to get the latest beta version of RH
 ```
 cd ~
-wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.1.0-beta.2 -O temp.zip
+wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.1.0-beta.4 -O temp.zip
 unzip temp.zip
 mv RotorHazard RotorHazard.old
-mv RotorHazard-4.1.0-beta.2 RotorHazard
+mv RotorHazard-4.1.0-beta.4 RotorHazard
 rm temp.zip
 cp RotorHazard.old/src/server/config.json RotorHazard/src/server/
 cp RotorHazard.old/src/server/database.db RotorHazard/src/server/
+cd ~/RotorHazard/src/server
+pip install --upgrade --no-cache-dir -r requirements.txt
 ```
 
-flash the esp with [this script](files/flashbackpack.py)
+build elrs backpack files with elrs configurator (very sad, I know)
+
+- select the backpack tab on the left
+- select the git branch tab on the top
+- select master for the git branch
+- select RotorHazard for the device category
+- build
+- copy all files to your Pi's home folder
+
+
+put [this script](files/flashbackpack.py) in your home folder
+
+do ```python flashbackpack.py```
