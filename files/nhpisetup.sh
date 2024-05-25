@@ -91,11 +91,6 @@ echo iptables-persistent iptables-persistent/autosave_v4 boolean true | sudo deb
 echo iptables-persistent iptables-persistent/autosave_v6 boolean true | sudo debconf-set-selections
 sudo apt-get -y install iptables-persistent
 
-# Check for the nuclearwifi argument
-if [ "$1" == "nuclearwifi" ]; then
-    sudo systemctl enable hotspot.service
-fi
-
 echo "if iwgetid -r | grep -q .; then
     echo "Wi-Fi network found. Not creating a hotspot."
 else
@@ -116,6 +111,10 @@ WorkingDirectory=/home/NuclearHazard/
 
 [Install]
 WantedBy=multi-user.target" | sudo tee -a /etc/systemd/system/hotspot.service
-sudo systemctl enable hotspot.service
+
+# Check for the nuclearwifi argument
+if [ "$1" == "nuclearwifi" ]; then
+    sudo systemctl enable hotspot.service
+fi
 
 sudo reboot
