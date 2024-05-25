@@ -4,15 +4,15 @@
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 LOG_FILE="$SCRIPT_DIR/nhpisetup.log"
 
-# Function to log messages
-log() {
-    echo "$(date '+%Y-%m-%d %H:%M:%S') - $1" | tee -a "$LOG_FILE"
-}
+# Redirect all output to the log file
+exec > >(tee -a "$LOG_FILE") 2>&1
 
 # update and install dependencies
 sudo apt update
 sudo apt upgrade -y
-sudo apt install dhcpcd5 python3.11-venv python3-dev libffi-dev python3-smbus build-essential python3-pip git scons swig python3-rpi.gpio default-jdk-headless libjpeg-dev libopenjp2-7-dev esptool -y
+sudo apt install dhcpcd5 python3.11-venv python3-dev libffi-dev python3-smbus build-essential python3-pip git scons swig python3-rpi.gpio default-jdk-headless libjpeg-dev libopenjp2-7-dev -y
+# for VRxC flashing
+python -m pip install esptool
 
 # setup pi
 sudo raspi-config nonint do_serial_hw 0
@@ -93,7 +93,6 @@ sudo apt-get -y install iptables-persistent
 
 # Check for the nuclearwifi argument
 if [ "$1" == "nuclearwifi" ]; then
-    log "nuclearwifi option detected. Enabling hotspot service..."
     sudo systemctl enable hotspot.service
 fi
 
