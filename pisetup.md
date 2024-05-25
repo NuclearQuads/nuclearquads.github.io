@@ -4,7 +4,7 @@ If there are any errors, let me know so I can fix them, but also a quick google 
 
 Note: The username on your Pi OS installation must be NuclearHazard.
 
-This is written for the version of Pi OS released on 2023-10-10 (Bookworm?) and Pi 3/4/5/Zero2 hardware. Older versions probably will give errors.
+This is written for the version of Pi OS released on 2023-10-10 (Bookworm?) and Pi 3/4/5/Zero2 hardware. Other versions probably will give errors.
 
 ```bash
 sudo apt update
@@ -18,11 +18,12 @@ sudo raspi-config nonint do_i2c 0
 sudo raspi-config nonint do_ssh 0
 sudo raspi-config nonint do_spi 0
 ```
-For some reason it seems /boot/config.txt has been moved in some Pi OS versions. If you have problems connecting to the receivers/STM, rerun this block but change the path in the last line to `/boot/config.txt`.
 ```
-echo "dtparam=i2c_baudrate=75000
 dtoverlay=miniuart-bt
+dtparam=i2c_baudrate=75000
 dtoverlay=act-led,gpio=24
+dtoverlay=gpio-led,gpio=26,label=pwrled,trigger=default-on
+dtoverlay=gpio-fan,gpiopin=4
 dtparam=act_led_trigger=heartbeat
 
 [pi5]
@@ -31,15 +32,15 @@ dtoverlay=i2c1-pi5
 dtoverlay=uart3-pi5
 
 [pi4]
-dtoverlay=gpio-shutdown,gpio_pin=18,debounce=5000
+dtoverlay=gpio-shutdown,gpio_pin=19,debounce=5000
 dtoverlay=uart4
 
 [pi3]
-dtoverlay=gpio-shutdown,gpio_pin=18,debounce=5000
+dtoverlay=gpio-shutdown,gpio_pin=19,debounce=5000
 core_freq=250
 
 [pi02]
-dtoverlay=gpio-shutdown,gpio_pin=18,debounce=5000
+dtoverlay=gpio-shutdown,gpio_pin=19,debounce=5000
 core_freq=250
 
 [all]" | sudo tee -a /boot/firmware/config.txt
@@ -117,6 +118,7 @@ WorkingDirectory=/home/NuclearHazard/
 WantedBy=multi-user.target" | sudo tee -a /etc/systemd/system/hotspot.service
 sudo systemctl enable hotspot.service
 ```
+To disable the hotspot, do ```sudo systemctl disable hotspot.service```
 ```
 sudo reboot
 ```

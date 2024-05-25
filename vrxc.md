@@ -6,12 +6,29 @@ dtoverlay=uart4
 
 [pi5]
 dtoverlay=uart3-pi5
+dtparam=spi=off
 ```
 
 do this
 
 ```
 python -m pip install esptool
+```
+
+to get the latest beta version of RH
+```
+cd ~
+sudo systemctl stop rotorhazard
+wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.1.0-beta.6 -O temp.zip
+unzip temp.zip
+mv RotorHazard RotorHazard.old
+mv RotorHazard-4.1.0-beta.6 RotorHazard
+rm temp.zip
+cp RotorHazard.old/src/server/config.json RotorHazard/src/server/
+cp RotorHazard.old/src/server/database.db RotorHazard/src/server/
+cd ~/RotorHazard/src/server
+pip install --upgrade --no-cache-dir -r requirements.txt
+sudo systemctl start rotorhazard
 ```
 
 ```
@@ -24,20 +41,6 @@ rm -r VRxC_ELRS
 rm VRxC_ELRS.zip
 ```
 
-to get the latest beta version of RH
-```
-cd ~
-wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.1.0-beta.4 -O temp.zip
-unzip temp.zip
-mv RotorHazard RotorHazard.old
-mv RotorHazard-4.1.0-beta.4 RotorHazard
-rm temp.zip
-cp RotorHazard.old/src/server/config.json RotorHazard/src/server/
-cp RotorHazard.old/src/server/database.db RotorHazard/src/server/
-cd ~/RotorHazard/src/server
-pip install --upgrade --no-cache-dir -r requirements.txt
-```
-
 build elrs backpack files with elrs configurator (very sad, I know)
 
 - select the backpack tab on the left
@@ -47,7 +50,8 @@ build elrs backpack files with elrs configurator (very sad, I know)
 - build
 - copy all files to your Pi's home folder
 
-
 put [this script](files/flashbackpack.py) in your home folder
 
 do ```python flashbackpack.py```
+
+also update your goggle backpack to the master backpack branch
