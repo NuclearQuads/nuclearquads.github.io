@@ -8,9 +8,9 @@ LOG_FILE="$SCRIPT_DIR/nhpisetup.log"
 exec > >(tee -a "$LOG_FILE") 2>&1
 
 # update and install dependencies
-sudo apt update
-sudo apt upgrade -y
-sudo apt install dhcpcd5 python3.11-venv python3-dev libffi-dev python3-smbus build-essential python3-pip git scons swig python3-rpi.gpio default-jdk-headless libjpeg-dev libopenjp2-7-dev -y
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get install dhcpcd5 python3.11-venv python3-dev libffi-dev python3-smbus build-essential python3-pip git scons swig python3-rpi.gpio default-jdk-headless libjpeg-dev libopenjp2-7-dev -y
 # for VRxC flashing
 python -m pip install esptool
 
@@ -56,9 +56,9 @@ VIRTUAL_ENV_DISABLE_PROMPT=1
 source ~/.venv/bin/activate" | sudo tee -a ~/.bashrc
 source ~/.venv/bin/activate
 
-wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.1.0-beta.6 -O temp.zip
+wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.1.0 -O temp.zip
 unzip temp.zip
-mv RotorHazard-4.1.0-beta.6 RotorHazard
+mv RotorHazard-4.1.0 RotorHazard
 rm temp.zip
 cd ~/RotorHazard/src/server
 pip install -r requirements.txt
