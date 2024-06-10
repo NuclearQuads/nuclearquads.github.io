@@ -56,10 +56,18 @@ VIRTUAL_ENV_DISABLE_PROMPT=1
 source ~/.venv/bin/activate" | sudo tee -a ~/.bashrc
 source ~/.venv/bin/activate
 
-wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.1.0 -O temp.zip
-unzip temp.zip
-mv RotorHazard-4.1.0 RotorHazard
-rm temp.zip
+# official way
+#wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.1.0 -O temp.zip
+#unzip temp.zip
+#mv RotorHazard-4.1.0 RotorHazard
+#rm temp.zip
+
+# using git because we need the retry commit
+git clone --depth 1 --branch v4.1.0 https://github.com/RotorHazard/RotorHazard.git
+cd RotorHazard
+git fetch origin a759846b12011a394422af9c00b1b89423a3dd70
+git cherry-pick a759846b12011a394422af9c00b1b89423a3dd70
+
 cd ~/RotorHazard/src/server
 pip install -r requirements.txt
 pip install pillow
@@ -105,7 +113,7 @@ Wants=NetworkManager.service
 
 [Service]
 Type=simple
-ExecStartPre=/bin/sleep 10
+ExecStartPre=/bin/sleep 20
 ExecStart=sudo /home/NuclearHazard/hotspot.sh
 WorkingDirectory=/home/NuclearHazard/
 
