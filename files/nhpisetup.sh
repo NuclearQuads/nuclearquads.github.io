@@ -33,6 +33,7 @@ dtparam=act_led_trigger=heartbeat
 dtoverlay=uart0-pi5
 dtoverlay=i2c1-pi5
 dtoverlay=uart3-pi5
+
 dtparam=spi=offgit
 
 [pi4]
@@ -76,6 +77,9 @@ python -c "import Config; Config.Config(None)"
 sed -i 's/"ADMIN_USERNAME": "admin"/"ADMIN_USERNAME": "NuclearHazard"/' config.json
 sed -i 's/"ADMIN_PASSWORD": "rotorhazard"/"ADMIN_PASSWORD": "nuclearhazard"/' config.json
 sed -i 's/"SHUTDOWN_BUTTON_GPIOPIN": 18/"SHUTDOWN_BUTTON_GPIOPIN": 19/' config.json
+sed -i 's/"hue_0": "212"/"hue_0": "100"/' config.json
+sed -i 's/"sat_0": "55"/"sat_0": "75"/' config.json
+sed -i 's/"timerName": "RotorHazard"/"timerName": "NuclearHazard"/' config.json
 cd ~
 
 echo "[Unit]
