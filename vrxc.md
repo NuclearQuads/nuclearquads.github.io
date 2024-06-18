@@ -1,4 +1,4 @@
-add this to boot/firmware/config.txt
+add this to boot/firmware/config.txt if not already present
 
 ```
 [pi4]
@@ -9,29 +9,10 @@ dtoverlay=uart3-pi5
 dtparam=spi=off
 ```
 
-do this
+## do this
 
 ```
 python -m pip install esptool
-```
-
-to get the latest beta version of RH
-```
-cd ~
-sudo systemctl stop rotorhazard
-wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.1.0-beta.6 -O temp.zip
-unzip temp.zip
-mv RotorHazard RotorHazard.old
-mv RotorHazard-4.1.0-beta.6 RotorHazard
-rm temp.zip
-cp RotorHazard.old/src/server/config.json RotorHazard/src/server/
-cp RotorHazard.old/src/server/database.db RotorHazard/src/server/
-cd ~/RotorHazard/src/server
-pip install --upgrade --no-cache-dir -r requirements.txt
-sudo systemctl start rotorhazard
-```
-
-```
 cd ~
 sudo rm -r RotorHazard/src/server/plugins/VRxC_ELRS
 wget https://github.com/i-am-grub/VRxC_ELRS/releases/download/v1.0.0/VRxC_ELRS.zip
@@ -41,17 +22,31 @@ rm -r VRxC_ELRS
 rm VRxC_ELRS.zip
 ```
 
-build elrs backpack files with elrs configurator (very sad, I know)
-
-- select the backpack tab on the left
-- select the git branch tab on the top
-- select master for the git branch
-- select RotorHazard for the device category
-- build
+### download the 4 backpack bin files (only for nuclearhazard)
+- [boot_app0.bin](files/backpack/boot_app0.bin)
+- [bootloader.bin](files/backpack/bootloader.bin)
+- [firmware.bin](files/backpack/firmware.bin)
+- [partitions.bin](files/backpack/partitions.bin)
 - copy all files to your Pi's home folder
 
 put [this script](files/flashbackpack.py) in your home folder
 
-do ```python flashbackpack.py```
+### or if connected to the internet
+do these
+```
+wget nuclearquads.github.io/files/flashbackpack.py
+wget nuclearquads.github.io/files/backpack/boot_app0.bin
+wget nuclearquads.github.io/files/backpack/bootloader.bin
+wget nuclearquads.github.io/files/backpack/firmware.bin
+wget nuclearquads.github.io/files/backpack/partitions.bin
+```
 
-also update your goggle backpack to the master backpack branch
+## do 
+
+```
+sudo systemctl stop rotorhazard.service
+python flashbackpack.py
+sudo systemctl start rotorhazard.service
+```
+
+## also update your goggle backpack to the master backpack branch
