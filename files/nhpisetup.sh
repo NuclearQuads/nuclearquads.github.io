@@ -45,7 +45,7 @@ dtoverlay=gpio-shutdown,gpio_pin=19,debounce=5000
 core_freq=250
 
 [pi02]
-dtoverlay=gpio-shutdown,gpio_pin=19,debounce=5000
+#dtoverlay=gpio-shutdown,gpio_pin=19,debounce=5000
 core_freq=250
 
 [all]
