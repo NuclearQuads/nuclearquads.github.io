@@ -43,3 +43,21 @@ core_freq=250
 The card edge connectors went out of stock, so I changed the design to use 12-pin connectors instead of the previous 10-pin ones. This means the carrier cards aren't cross compatible. Because of the extra pins, this can be inserted either direction so there is no alignment dot. The pads for the unused RX contacts have also been removed for easier soldering.
 
 Since the Pi 5 has a built-in RTC, the RTC battery slot on the board has been removed. Use the Pi 5's one if possible. If an older Pi needs a RTC, use the header for the adafruit RTC module.
+
+## Can't open timer webpage
+
+If your timer powers on and beeps but doesn't let you access the webpage after connecting to the wifi, something is likely corrupted and is stopping the server from starting.
+
+To see what the problem is, you'll need to SSH to the Pi. On Windows, use [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) (download the latest 64-bit x86 installer).
+
+Connect your computer to the NuclearHazard wifi network, open PuTTY, and connect like shown in this picture.
+
+![PuTTY](images/putty.png)
+
+Once connected, you'll have to enter the password (nuclearhazard) then you can enter commands.
+
+To check whether the server is started or what errors are stopping it do `sudo systemctl status rotorhazard`. Some text will probably be cut off, so resize the PuTTY window and run the command again to see it all.
+
+To clear the RotorHazard database (in case it's become corrupted) to `rm /RotorHazard/src/server/database.db`. Then restart the timer. This will remove any pilots, events, heats, classes, etc that you've set up.
+
+If it's still not working, follow the instructions to [reflash your SD card](flash.md).
