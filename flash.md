@@ -4,7 +4,7 @@
 
 [Win32DiskImager](https://win32diskimager.b-cdn.net/win32diskimager-1.0.0-install.exe)
 
-[NuclearHazard 4.1.1 SD Card Image]() (8GB file may take a while to download)
+[NuclearHazard 4.1.1 SD Card Image](https://mega.nz/file/6zICgQII#1lz5N5bQV_MiUNIl96TFNG5KtJZdfScnmMNLl68CNtA) (8GB file may take a while to download)
 
 ## How to flash
 
