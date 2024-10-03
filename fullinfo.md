@@ -1,3 +1,13 @@
+## Version 8 PCB
+
+V8 uses the V7 RX carrier cards.
+
+Changes since V7:
+- New layout for slightly smaller case
+- Added INA219 which works with regular setup
+- Added 4 RX solder pads on bottom of main board so a slim timer can be built without RX connector cards
+- Added vin 2.54mm header for theoretical PoE applications
+
 ## ESP32 Pinout Wrong
 
 In PCB versions 6 and lower, the footprint for the ESP32 is wrong so it will never work. If you want to use an ESP32 on these boards, you will probably need to solder wires to the bottom of the Pi header. This is expected to be fixed in version 7.

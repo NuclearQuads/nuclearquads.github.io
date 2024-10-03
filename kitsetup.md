@@ -9,26 +9,26 @@ Along with the kit, you should also have the following ready to use:
 
 ## Case Printing
 
-### [Get the case file here](https://cad.onshape.com/documents/c21f8ac03c166bed0d6faeab/w/4bf3b280307091cb20025cb6/e/8e522757019b78bf199024ba)
+### Get the case file here
+- [Version 7](https://cad.onshape.com/documents/c21f8ac03c166bed0d6faeab/w/4bf3b280307091cb20025cb6/e/8e522757019b78bf199024ba)
+- [Version 8](https://cad.onshape.com/documents/c21f8ac03c166bed0d6faeab/w/4bf3b280307091cb20025cb6/e/5fcbd1b7334123f6e5ad0816)
 
 Check your NuclearHazard PCB version, which should be printed on the PCB. The case for version 3 is slightly different than 4+. The link above takes you to the onshape project where the case is always up to date. Find the case version number with your PCB version. Version 3 also has an option for a 40mm or 50mm fan. To download, navigate to the correct version number folder on the **bottom bar**, then right click the "NuclearHazard vX" tab. Click Export. Check "Export unique parts as individual files". Click Export.
 
 When importing the **lid** into your slicer, it should be turned upside down to avoid needing supports.
 
-Print with support only on the completely horizontal overhangs. The PrusaSlicer setting for this is "Overhang threshold". Set it to 1. Using a "Top/bottom contact Z distance" of twice your layer height (0.4mm for 0.2mm layer height) will make the supports easy to remove.
+Print with support only on the completely horizontal overhangs of the case. The PrusaSlicer setting for this is "Overhang threshold". Set it to 1. Using a "Top/bottom contact Z distance" of twice your layer height (0.4mm for 0.2mm layer height) will make the supports easy to remove. In Bambu or Orca slicer, use paint-on supports only on the long overhang for the Pi connector.
 
 ## Pi/Case Installation
 
-- _If you ordered with a case_, all you need to do is install your Pi by aligning the pins with the connector on the board and press it firmly all the way down.
-- _If you chose to print your own case_, install the board by inserting the XT60 connector into its slot then lower the whole PCB in. Slide it around until the bottom of the PCB is under the small clip built into the case and the screw holes line up. Use two of the short screws in the top screw holes. Use a short screw and firmly push the screw into the hole as you screw it in. Don't over-tighten the screws. Once they hold the PCB from moving around, they're tight enough. Insert the Pi as described above. Use 4 long screws to secure the fan to the lid, exhausting through the lid. Plug the fan into the main PCB, then use 4 short screws to secure the lid to the case.
+Install the board by inserting the XT60 connector into its slot then lower the whole PCB in. Slide it around until the bottom of the PCB is under the small clip built into the case and the screw holes line up. Use two of the short screws in the top screw holes. Use a short screw and firmly push the screw into the hole as you screw it in. Don't over-tighten the screws. Once they hold the PCB from moving around, they're tight enough. Insert the Pi as described above. Use 4 long screws to secure the fan to the lid, exhausting through the lid. Plug the fan into the main PCB, then use 4 short screws to secure the lid to the case.
 
 Note: the battery slot is not currently used by the software.
 
 ## RX Installation
 
-Since I no longer sell RXs with the NuclearHazard kits, you'll have to order and solder your own. The following sellers have been reliable for me and haven't needed the SPI mod.
-- [IC module (CN)](https://www.aliexpress.us/item/3256806084478140.html)
-- [diymore Alice1101983 (CN)](https://www.aliexpress.us/item/2251832717229710.html)
+Since I no longer sell RXs with the NuclearHazard kits, you'll have to order and solder your own. The following sellers have been reliable for me and haven't needed the SPI mod. If the links don't work, just search AliExpress for "RX5808" and choose a cheap one.
+- [diymore Alice1101983 (CN)](https://www.aliexpress.us/item/3256807089365797.html)
 - [DiyBox Electronic (US)](https://www.ebay.com/itm/115887932678)
 
 Start by tinning one pad of the RX carrier with solder. **Be very careful to not get any solder on the connector pads!** Align all the pads of the RX and reheat the tinned pad to reflow the solder. Keep holding the RX aligned until the solder is hardened. That'll hold it still while you solder the rest of the pads.
