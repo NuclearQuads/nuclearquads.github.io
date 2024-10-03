@@ -58,13 +58,13 @@ source ~/.venv/bin/activate" | sudo tee -a ~/.bashrc
 source ~/.venv/bin/activate
 
 # official way
-#wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.1.0 -O temp.zip
-#unzip temp.zip
-#mv RotorHazard-4.1.0 RotorHazard
-#rm temp.zip
+wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.1.1 -O temp.zip
+unzip temp.zip
+mv RotorHazard-4.1.1 RotorHazard
+rm temp.zip
 
  # git way
-git clone --depth 1 --branch v4.1.1 https://github.com/RotorHazard/RotorHazard.git
+#git clone --depth 1 --branch v4.1.1 https://github.com/RotorHazard/RotorHazard.git
 # in case a single commit is needed to fix something
 #cd RotorHazard
 #git fetch origin a759846b12011a394422af9c00b1b89423a3dd70
