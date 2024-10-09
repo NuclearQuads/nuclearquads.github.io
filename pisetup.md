@@ -6,9 +6,9 @@ Run this command, which will download and run this script
 Or this one which will disable the NuclearHazard wifi network
 ```curl -s https://nuclearquads.github.io/files/nhpisetup.sh | bash```
 
-This 
-
 If there are any errors, let me know so I can fix them, but also a quick google search should easily solve most of them.
+
+The [RotorHazard discord server](https://discord.gg/ANKd2pzBKH) is the best place to contact me or the RotorHazard developers for help.
 
 Note: The username on your Pi OS installation must be NuclearHazard.
 
