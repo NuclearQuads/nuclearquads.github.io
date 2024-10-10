@@ -1,13 +1,12 @@
 # [New Store](https://cbf9af-34.myshopify.com/) (not operational yet)
 
-<!DOCTYPE html>
 <html>
 <head>
   <style>
     .products-container {
       display: flex;
-      flex-wrap: nowrap;
-      justify-content: space-between;
+      flex-wrap: wrap; /* Allow items to wrap to next line */
+      justify-content: center;
       gap: 20px;
       max-width: 1200px;
       margin: 0 auto;
@@ -15,8 +14,26 @@
     }
     
     .product-wrapper {
-      flex: 1;
-      min-width: 0; /* Prevents flex items from overflowing */
+      /* Mobile first - one item per row */
+      flex: 0 1 100%;
+      min-width: 280px; /* Minimum width for mobile */
+      max-width: 100%;
+    }
+
+    /* Tablet - two items per row */
+    @media (min-width: 768px) {
+      .product-wrapper {
+        flex: 0 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+      }
+    }
+
+    /* Desktop - all four items in one row */
+    @media (min-width: 1024px) {
+      .product-wrapper {
+        flex: 0 1 calc(25% - 15px);
+        max-width: calc(25% - 15px);
+      }
     }
   </style>
 </head>
