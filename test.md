@@ -31,8 +31,8 @@
     /* Desktop - all four items in one row */
     @media (min-width: 1024px) {
       .product-wrapper {
-        flex: 0 1 calc(23% - 8px); /* Slightly smaller width per item */
-        max-width: calc(23% - 8px);
+        flex: 0 1 calc(20% - 8px); /* Slightly smaller width per item */
+        max-width: calc(20% - 8px);
       }
       
       /* Override any max-width settings from Shopify's default styles */
