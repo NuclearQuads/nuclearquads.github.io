@@ -5,34 +5,39 @@
   <style>
     .products-container {
       display: flex;
-      flex-wrap: wrap; /* Allow items to wrap to next line */
+      flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
-      max-width: 1200px;
+      gap: 10px; /* Reduced gap to help fit all items */
+      max-width: 900px; /* Reduced max-width to match typical GitHub Pages content width */
       margin: 0 auto;
-      padding: 20px;
+      padding: 10px;
     }
     
     .product-wrapper {
       /* Mobile first - one item per row */
       flex: 0 1 100%;
-      min-width: 280px; /* Minimum width for mobile */
+      min-width: 280px;
       max-width: 100%;
     }
 
     /* Tablet - two items per row */
     @media (min-width: 768px) {
       .product-wrapper {
-        flex: 0 1 calc(50% - 10px);
-        max-width: calc(50% - 10px);
+        flex: 0 1 calc(50% - 5px);
+        max-width: calc(50% - 5px);
       }
     }
 
     /* Desktop - all four items in one row */
     @media (min-width: 1024px) {
       .product-wrapper {
-        flex: 0 1 calc(25% - 15px);
-        max-width: calc(25% - 15px);
+        flex: 0 1 calc(23% - 8px); /* Slightly smaller width per item */
+        max-width: calc(23% - 8px);
+      }
+      
+      /* Override any max-width settings from Shopify's default styles */
+      .product-wrapper > div {
+        max-width: 100% !important;
       }
     }
   </style>
