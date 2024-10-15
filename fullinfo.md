@@ -68,6 +68,6 @@ Once connected, you'll have to enter the password (nuclearhazard) then you can e
 
 To check whether the server is started or what errors are stopping it do `sudo systemctl status rotorhazard`. Some text will probably be cut off, so resize the PuTTY window and run the command again to see it all.
 
-To clear the RotorHazard database (in case it's become corrupted) to `rm /RotorHazard/src/server/database.db`. Then restart the timer. This will remove any pilots, events, heats, classes, etc that you've set up.
+To clear the RotorHazard database (in case it's become corrupted) to `rm RotorHazard/src/server/database.db`. Then restart the timer. This will remove any pilots, events, heats, classes, etc that you've set up.
 
 If it's still not working, follow the instructions to [reflash your SD card](flash.md).
