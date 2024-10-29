@@ -1,5 +1,3 @@
-# [New Store](https://cbf9af-34.myshopify.com/) (not operational yet)
-
 <html>
 <head>
   <style>
@@ -18,6 +16,12 @@
       flex: 0 1 100%;
       min-width: 280px;
       max-width: 100%;
+    }
+
+    .product-image {
+      cursor: pointer;
+      width: 100%;
+      height: auto;
     }
 
     /* Tablet - two items per row */
@@ -93,6 +97,19 @@
             moneyFormat: '%24%7B%7Bamount%7D%7D',
             options: {
     "product": {
+        "contents": {
+        "options": false,
+        "img": true,
+        "imgWithCarousel": false,
+        "button": true
+        },
+        "events": {
+        "afterRender": function(component) {
+            component.node.querySelector('.shopify-buy__product__actual-image').addEventListener('click', function() {
+            component.openModal();
+            });
+        }
+        }
         "styles": {
         "product": {
             "@media (min-width: 601px)": {
@@ -100,6 +117,9 @@
             "margin-left": "20px",
             "margin-bottom": "50px"
             }
+        },
+        "img": {
+            "cursor": "pointer"
         },
         "button": {
             "font-family": "Quantico, sans-serif",
@@ -117,9 +137,6 @@
         }
         },
         "buttonDestination": "modal",
-        "contents": {
-        "options": false
-        },
         "text": {
         "button": "View product"
         },
