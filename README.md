@@ -1,4 +1,4 @@
-# NuclearHazard Timer
+# NuclearHazard Timers
 
 Currently taking pre-orders of full-size timer kits, expected to ship end of January 2024!
 
