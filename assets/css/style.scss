@@ -1,6 +1,7 @@
 ---
 ---
 
+@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Montserrat:wght@400;700&display=swap');
 @import "{{ site.theme }}";
 
 $body-background: $cod-grey !default;
@@ -9,6 +10,8 @@ $header: $conifer !default;
 $blockquote-color: $silver-chalice !default;
 $blockquote-border: $dove-grey !default;
 $container-max-width: 1000px;
+$body-background: $cod-grey !default;
+$body-foreground: $gallery !default;
 
 @mixin media-max-width($max-width) {
   @media (max-width: $max-width) {
@@ -23,7 +26,7 @@ body {
   color: $body-foreground;
   font-size: 16px;
   line-height: 1.5;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* General & 'Reset' Stuff */
@@ -56,17 +59,17 @@ li {
 header {
   background: rgba(0, 0, 0, 0.1);
   width: 100%;
-  border-bottom: 1px dashed $conifer; //header;
+  border-bottom: none;
   padding: 20px 0;
-  margin: 0 0 40px 0;
+  margin: 0 0 0 0;
 }
 
 header h1 {
   font-size: 40px;
   line-height: 1.5;
-  margin: 0 0 0 -70px;
+  margin: 0 0 0 -50px;
   font-weight: bold;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family: 'Baumans', Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: $conifer;//$header;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
@@ -84,10 +87,11 @@ header h1:before {
 }
 
 header h2 {
-  font-size: 18px;
-  font-weight: 300;
-  color: #666;
-}
+    font-size: 18px;
+    font-weight: 300;
+    color: #666;
+    font-family: 'Baumans', sans-serif;
+  }
 
 #downloads .btn {
   display: inline-block;
@@ -108,7 +112,7 @@ section img {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family: 'Montserrat', sans-serif;
   color: $header;
   letter-spacing: -0.03em;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
@@ -266,4 +270,52 @@ a {
 
 #a-title {
   text-decoration: none;
+}
+
+/* Navigation Styles */
+.site-nav {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-top: 2px dashed rgba($conifer, .5);
+    border-bottom: 2px dashed rgba($conifer, .5);
+  }
+  
+.nav-tab {
+    display: inline-block;
+    padding: 8px 18px;
+    margin-right: 10px;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-family: 'Baumans', Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba($conifer, 0.15);
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.4);
+        border-color: rgba($conifer, 0.5);
+        color: $conifer;
+        text-shadow: 0 0 5px rgba($conifer, 0.5);
+    }
+
+    &.active {
+        background: rgba(0, 0, 0, 0.4);
+        border-color: $conifer;
+        color: $conifer;
+        text-shadow: 0 0 5px rgba($conifer, 0.5);
+    }
+}
+  
+@include media-max-width($container-max-width) {
+    .site-nav {
+        text-align: center;
+    }
+
+    .nav-tab {
+        margin: 5px;
+        font-size: 13px;
+        padding: 6px 14px;
+    }
 }

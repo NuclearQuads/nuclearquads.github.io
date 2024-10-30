@@ -1,3 +1,16 @@
+## [Etsy Store](https://nuclearquads.etsy.com):
+
+Etsy helped me get a start, but now I've transitioned to the web store built in to this website. For reviews, you can still check my Etsy listings
+
+[Pre-Assembled NuclearHazard Atom](https://nuclearquads.etsy.com/listing/1590802322/nuclearhazard-atom-complete-fpv-practice) (2-pilot practice timer)
+
+[Pre-Assembled NuclearHazard Core](https://nuclearquads.etsy.com/listing/1774353764/nuclearhazard-core-complete-fpv-event) (8-pilot event timer)
+
+[Kit NuclearHazard Core](https://nuclearquads.etsy.com/listing/1773191870/nuclearhazard-core-kit-v8) (Use your own case, RXs, and Pi)
+
+[PoE Adapter Kit for NuclearHazard Core](https://nuclearquads.etsy.com/listing/1756301464/poe-kit-for-nuclearhazard-core)
+
+
 <html>
 <head>
   <style>
