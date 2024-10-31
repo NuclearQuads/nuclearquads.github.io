@@ -1,6 +1,6 @@
 # Welcome to the NuclearQuads website!
 
-[Find assembly and usage instructions here](instructions.md)
+[Find assembly and usage instructions here](instructions/instructions.md)
 
 [See news about product updates and store stock here](news.md)
 

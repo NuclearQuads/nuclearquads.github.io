@@ -236,7 +236,7 @@ hr {
   width: 16px;
   height: 16px;
   margin: 1px 8px 0 0;
-  float: left;
+  //float: left;
 }
 
 .btn-github .icon {
@@ -279,7 +279,7 @@ a {
     border-top: 2px dashed rgba($conifer, .5);
     border-bottom: 2px dashed rgba($conifer, .5);
   }
-  
+
 .nav-tab {
     display: inline-block;
     padding: 8px 18px;
@@ -287,8 +287,8 @@ a {
     border-radius: 5px;
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
-    font-family: 'Baumans', Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-    font-size: 20px;
+    font-family: 'Baumans', "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+    font-size: 18px;
     background: rgba(0, 0, 0, 0.2);
     border: 1px solid rgba($conifer, 0.15);
     transition: all 0.3s ease;

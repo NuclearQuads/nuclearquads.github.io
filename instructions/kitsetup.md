@@ -1,4 +1,4 @@
-# Hardware Setup
+# NuclearHazard Core Kit Hardware Setup
 
 ## Required Parts
 
@@ -6,12 +6,13 @@ Along with the kit, you should also have the following ready to use:
 - Raspberry Pi (Version 3 or Zero 2 minimum)
 - 8+GB Micro SD card for the Pi (instructions for installing the OS below)
 - 1-8 RX5808s
+- XT60 power supply (battery or other DC power supply works)
 
 ## Case Printing
 
 ### Get the case file here
 - [Version 7](https://cad.onshape.com/documents/c21f8ac03c166bed0d6faeab/w/4bf3b280307091cb20025cb6/e/8e522757019b78bf199024ba)
-- [Version 8](https://cad.onshape.com/documents/c21f8ac03c166bed0d6faeab/w/4bf3b280307091cb20025cb6/e/5fcbd1b7334123f6e5ad0816)
+- [Version 8](https://cad.onshape.com/documents/c21f8ac03c166bed0d6faeab/w/4bf3b280307091cb20025cb6/e/5fcbd1b7334123f6e5ad0816) (For the "shorty" version, use the configuration dropdown in the top left)
 
 Check your NuclearHazard PCB version, which should be printed on the PCB. The case for version 3 is slightly different than 4+. The link above takes you to the onshape project where the case is always up to date. Find the case version number with your PCB version. Version 3 also has an option for a 40mm or 50mm fan. To download, navigate to the correct version number folder on the **bottom bar**, then right click the "NuclearHazard vX" tab. Click Export. Check "Export unique parts as individual files". Click Export.
 
