@@ -17,23 +17,14 @@
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-
         <nav class="site-nav">
           <a href="{{ '/' | relative_url }}" class="nav-tab {% if page.url == '/' or page.url == '/index.html' %}active{% endif %}">Home</a>
           <a href="{{ '/instructions/instructions' | relative_url }}" class="nav-tab {% if page.url contains '/instructions' %}active{% endif %}">Instructions</a>
           <a href="{{ '/news/news' | relative_url }}" class="nav-tab {% if page.url contains '/news' %}active{% endif %}">News</a>
           <a href="{{ '/shop/shop' | relative_url }}" class="nav-tab {% if page.url contains '/shop' %}active{% endif %}">Shop</a>
         </nav>
-      
-        <section id="downloads">
-          {% if site.show_downloads %}
-            <a href="{{ site.github.zip_url }}" class="btn">Download as .zip</a>
-            <a href="{{ site.github.tar_url }}" class="btn">Download as .tar.gz</a>
-          {% endif %}
-        </section>
       </div>
     </header>
-
     <div class="container">
       <section id="main_content">
         {{ content }}
