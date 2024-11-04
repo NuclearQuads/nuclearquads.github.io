@@ -680,7 +680,7 @@ Welcome to my new store!
 
 <br>
 
-## [Etsy Store](https://nuclearquads.etsy.com):
+## Etsy Store:
 
 Etsy helped me get a start, but now I've transitioned to the web store built in to this website. You can still use Etsy to check the reviews, but I prefer all orders be placed on this site instead of Etsy.
 
