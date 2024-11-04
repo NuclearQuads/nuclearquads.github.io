@@ -42,19 +42,9 @@ section {
   margin: 0 0 20px 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 20px;
-}
-
 li {
   line-height: 1.4 ;
 }
-
-/* Header, <header>
-   header   - container
-   h1       - project name
-   h2       - project description
-*/
 
 header {
   background: rgba(0, 0, 0, 0.1);
@@ -114,6 +104,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-family: 'Montserrat', sans-serif;
   color: $header;
+  margin-bottom: 0px;
   letter-spacing: -0.03em;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
@@ -283,7 +274,7 @@ a {
 .nav-tab {
     display: inline-block;
     padding: 8px 18px;
-    margin-right: 10px;
+    margin-right: 6px;
     border-radius: 5px;
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;

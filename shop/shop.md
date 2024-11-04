@@ -1,15 +1,9 @@
-## [Etsy Store](https://nuclearquads.etsy.com):
+---
+layout: default
+title: Shop
+---
 
-Etsy helped me get a start, but now I've transitioned to the web store built in to this website. For reviews, you can still check my Etsy listings
-
-[Pre-Assembled NuclearHazard Atom](https://nuclearquads.etsy.com/listing/1590802322/nuclearhazard-atom-complete-fpv-practice) (2-pilot practice timer)
-
-[Pre-Assembled NuclearHazard Core](https://nuclearquads.etsy.com/listing/1774353764/nuclearhazard-core-complete-fpv-event) (8-pilot event timer)
-
-[Kit NuclearHazard Core](https://nuclearquads.etsy.com/listing/1773191870/nuclearhazard-core-kit-v8) (Use your own case, RXs, and Pi)
-
-[PoE Adapter Kit for NuclearHazard Core](https://nuclearquads.etsy.com/listing/1756301464/poe-kit-for-nuclearhazard-core)
-
+Welcome to my new store!
 
 <html>
 <head>
@@ -68,8 +62,6 @@ Etsy helped me get a start, but now I've transitioned to the web store built in 
       <div id='product-component-1728506909400'></div>
     </div>
   </div>
-
-  <!-- Your existing Shopify scripts go here -->
 
   <div id='product-component-1728502061357'></div>
     <script type="text/javascript">
@@ -686,4 +678,16 @@ Etsy helped me get a start, but now I've transitioned to the web store built in 
 </body>
 </html>
 
+<br>
 
+## [Etsy Store](https://nuclearquads.etsy.com):
+
+Etsy helped me get a start, but now I've transitioned to the web store built in to this website. You can still use Etsy to check the reviews, but I prefer all orders be placed on this site instead of Etsy.
+
+[Pre-Assembled NuclearHazard Atom](https://nuclearquads.etsy.com/listing/1590802322/nuclearhazard-atom-complete-fpv-practice) (2-pilot practice timer)
+
+[Pre-Assembled NuclearHazard Core](https://nuclearquads.etsy.com/listing/1774353764/nuclearhazard-core-complete-fpv-event) (8-pilot event timer)
+
+[Kit NuclearHazard Core](https://nuclearquads.etsy.com/listing/1773191870/nuclearhazard-core-kit-v8) (Use your own case, RXs, and Pi)
+
+[PoE Adapter Kit for NuclearHazard Core](https://nuclearquads.etsy.com/listing/1756301464/poe-kit-for-nuclearhazard-core)

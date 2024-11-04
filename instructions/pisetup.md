@@ -1,10 +1,6 @@
 # Pi Setup Script
 
-Run this command, which will download and run this script
-```curl -s https://nuclearquads.github.io/files/nhpisetup.sh | bash -s nuclearwifi```
 
-Or this one which will disable the NuclearHazard wifi network
-```curl -s https://nuclearquads.github.io/files/nhpisetup.sh | bash```
 
 If there are any errors, let me know so I can fix them, but also a quick google search should easily solve most of them.
 

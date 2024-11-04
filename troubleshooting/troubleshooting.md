@@ -1,3 +1,8 @@
+---
+layout: default
+title: Troubleshooting
+---
+
 ## Version 8 PCB
 
 V8 uses the V7 RX carrier cards.
@@ -58,16 +63,14 @@ Since the Pi 5 has a built-in RTC, the RTC battery slot on the board has been re
 
 If your timer powers on and beeps but doesn't let you access the webpage after connecting to the wifi, something is likely corrupted and is stopping the server from starting.
 
-To see what the problem is, you'll need to SSH to the Pi. On Windows, use [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) (download the latest 64-bit x86 installer).
+To see what the problem is, you'll need to [SSH to the Pi](../instructions/ssh).
 
 Connect your computer to the NuclearHazard wifi network, open PuTTY, and connect like shown in this picture.
 
-![PuTTY](images/putty.png)
-
-Once connected, you'll have to enter the password (nuclearhazard) then you can enter commands.
+![PuTTY](../images/putty.png)
 
 To check whether the server is started or what errors are stopping it do `sudo systemctl status rotorhazard`. Some text will probably be cut off, so resize the PuTTY window and run the command again to see it all.
 
 To clear the RotorHazard database (in case it's become corrupted) to `rm RotorHazard/src/server/database.db`. Then restart the timer. This will remove any pilots, events, heats, classes, etc that you've set up.
 
-If it's still not working, follow the instructions to [reflash your SD card](flash.md).
+If it's still not working, follow the instructions to [reflash your SD card](../troubleshooting/flash).

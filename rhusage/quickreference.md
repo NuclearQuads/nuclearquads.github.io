@@ -1,3 +1,5 @@
+# Quick Reference
+
 ## Passwords
 
 - Wifi:
