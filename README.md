@@ -2,6 +2,8 @@
 
 Use the navigation bar above or site map below to find what you're looking for.
 
+I'm beginning a transition from Etsy to a Shopify-based store built into this website. To keep hardware available to international customers the Etsy listings are still available, at a slightly higher price to make up for the increased fees that Etsy charges.
+
 <br>
 
 ## Don't want to build your own? Look at the pre-assembled options!
