@@ -4,7 +4,7 @@ title: News
 ---
 
 ## 2024-11-21
-RX modules have become very hard to obtain lately, so all my pre-built timers are out of stock and only available for preorder. I'm hoping to ship the preorders in early December. Kits are still available, but make sure you can get RXs yourself before ordering.
+RX modules have become very hard to obtain lately, so all my pre-built timers are out of stock and only available for preorder. I'm hoping to ship the preorders in the second week of December. Kits are still available, but make sure you can get RXs yourself before ordering.
 
 ## 2024-10-31
 Started accepting orders from my new shopify-based store, built into this new website! All timer variants are in stock.
