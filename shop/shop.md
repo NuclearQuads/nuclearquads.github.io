@@ -61,6 +61,9 @@ Welcome to my new store!
     <div class="product-wrapper">
       <div id='product-component-1728506909400'></div>
     </div>
+    <div class="product-wrapper">
+      <div id='product-component-1733361955678'></div>
+    </div>
   </div>
 
   <div id='product-component-1728502061357'></div>
