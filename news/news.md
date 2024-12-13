@@ -3,6 +3,9 @@ layout: default
 title: News
 ---
 
+## 2024-12-13
+All preorders have shipped, and I have a few extra timers in stock. These may be the last Core timers available since I can't get all the parts needed for more. Worry not though! I have a new design on the way which allows an EVEN SLIMMER case, and possibly built-in PoE!
+
 ## 2024-11-21
 RX modules have become very hard to obtain lately, so all my pre-built timers are out of stock and only available for preorder. I'm hoping to ship the preorders in the second week of December. Kits are still available, but make sure you can get RXs yourself before ordering.
 

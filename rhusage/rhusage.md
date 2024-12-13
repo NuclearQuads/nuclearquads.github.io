@@ -5,6 +5,10 @@ title: RotorHazard Usage
 
 # Quick Reference
 
+## Battery input voltage
+
+All NuclearHazard timers accept 2-5S input (7-21V)
+
 ## Passwords
 
 - Wifi:
