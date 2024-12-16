@@ -2,7 +2,12 @@
 
 Use the navigation bar above or site map below to find what you're looking for.
 
-I'm beginning a transition from Etsy to a Shopify-based store built into this website. To keep hardware available to international customers the Etsy listings are still available, at a slightly higher price to make up for the increased fees that Etsy charges.
+I have moved my shop from Etsy to a Shopify-based page built into this website. To keep hardware available to international customers, the Etsy listings may still be available, at a slightly higher price to make up for the increased fees that Etsy charges.
+
+<br>
+
+## Watch the process to assemble your own from a kit!
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ibEwxUbrrB4?si=YbN-GjJEpFG19bPU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <br>
 

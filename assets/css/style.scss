@@ -55,10 +55,10 @@ header {
 }
 
 header h1 {
-  font-size: 40px;
+  font-size: 46px;
   line-height: 1.5;
   margin: 0 0 0 -50px;
-  font-weight: bold;
+  font-weight: 300;
   font-family: 'Baumans', Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: $conifer;//$header;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
@@ -74,13 +74,16 @@ header h1 {
 header h1:before {
     content: "☢ ";
     font-size: 48px;
+    font-weight: 300;
+    font-family: 'Baumans', Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
 
 header h2 {
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 200;
     color: #666;
     font-family: 'Baumans', sans-serif;
+    letter-spacing: 0.002em;
   }
 
 #downloads .btn {
