@@ -3,6 +3,9 @@ layout: default
 title: News
 ---
 
+## 2024-12-30
+The last of my stock of Core timers has sold out. I'm working on refining the replacement, called the Fission, so it will be available in kit and pre-assembled form sometime in the first week of January. I have no more plans to sell through Etsy so they'll only be available through the store page on this site.
+
 ## 2024-12-13
 All preorders have shipped, and I have a few extra timers in stock. These may be the last Core timers available since I can't get all the parts needed for more. Worry not though! I have a new design on the way which allows an EVEN SLIMMER case, and possibly built-in PoE!
 
