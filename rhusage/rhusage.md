@@ -9,6 +9,10 @@ title: RotorHazard Usage
 
 All NuclearHazard timers accept 2-5S input (7-21V)
 
+The NuclearHazard Fission can also be powered over 48V PoE (802.3af)
+
+Note: My LED strip takes a max of 20mW per LED, and the rest of the timer takes 6500mW max. This means with 802.3af's limit of 15.4W, we have a maximum LED count of (15400mW-6500mW)/20mW = 445 LEDs
+
 ## Passwords
 
 - Wifi:
@@ -25,16 +29,21 @@ All NuclearHazard timers accept 2-5S input (7-21V)
 
 Use this to connect with SSH or to access the web interface.
 
-`10.42.0.1`
+`10.42.0.1` or `rotorhazard.local`
+
+## Connecting over Ethernet (Cable directly between Pi and PC)
+
+Instructions coming soon
+
 
 ## Connecting to your home network
 
-- Over SSH, do ```sudo nmtui```
-- Go to Activate a connection
-- Select your network
-- Enter your password if needed
-- Reboot/replug the timer
-- Use a network scanner (iNet app for iOS) to find the Pi's IP
+- Connect to the NuclearHazard network and start a SSH session
+- Open the wifi_config file by doing `nano wifi_config.txt`
+- Put your wifi name on the first line and your wifi password on the second line
+- Save and close the file by doing `ctrl+o` then `ctrl+x`
+- Reboot by running `sudo reboot`
+- Use a network scanner (iNet app for iOS) to find the Pi's IP or try `rotorhazard.local`
 
 # Simple Timing Process
 
