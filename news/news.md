@@ -3,6 +3,15 @@ layout: default
 title: News
 ---
 
+## 2025-01-08
+Preorders for the new NuclearHazard Fission are now open! More instructions, videos, and info are coming soon.
+
+The NuclearHazard Fission has these upgrades over the Core V8:
+- Built-in PoE
+- Much slimmer case
+- Heat-set inserts for the case lid
+- Support-less case printing
+
 ## 2024-12-30
 The last of my stock of Core timers has sold out. I'm working on refining the replacement, called the Fission, so it will be available in kit and pre-assembled form sometime in the first week of January. I have no more plans to sell through Etsy so they'll only be available through the store page on this site.
 

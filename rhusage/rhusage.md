@@ -35,8 +35,7 @@ Use this to connect with SSH or to access the web interface.
 
 Instructions coming soon
 
-
-## Connecting to your home network
+## Connecting to your home network (works on my 4.2.1+ images or setup script)
 
 - Connect to the NuclearHazard network and start a SSH session
 - Open the wifi_config file by doing `nano wifi_config.txt`

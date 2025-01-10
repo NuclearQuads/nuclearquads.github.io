@@ -47,329 +47,169 @@ Welcome to my new store!
     }
   </style>
 </head>
+
 <body>
   <div class="products-container">
     <div class="product-wrapper">
-      <div id='product-component-1728502061357'></div>
-    </div>
-    <div class="product-wrapper">
-      <div id='product-component-1728506840286'></div>
-    </div>
-    <div class="product-wrapper">
-      <div id='product-component-1728506875574'></div>
+      <div id='product-component-1736285612956'></div>
     </div>
     <div class="product-wrapper">
       <div id='product-component-1728506909400'></div>
     </div>
   </div>
 
-  <div id='product-component-1728502061357'></div>
-    <script type="text/javascript">
-    /*<![CDATA[*/
-    (function () {
-    var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-    if (window.ShopifyBuy) {
-        if (window.ShopifyBuy.UI) {
-        ShopifyBuyInit();
-        } else {
-        loadScript();
-        }
+  <div id='product-component-1736285612956'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
     } else {
-        loadScript();
+      loadScript();
     }
-    function loadScript() {
-        var script = document.createElement('script');
-        script.async = true;
-        script.src = scriptURL;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-        script.onload = ShopifyBuyInit;
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'cbf9af-34.myshopify.com',
+      storefrontAccessToken: 'c916ed512e9766f7185e7c78b7ea8b83',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '9699725115677',
+        node: document.getElementById('product-component-1736285612956'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "font-family": "Quantico, sans-serif",
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px",
+        "border-radius": "40px",
+        "padding-left": "36px",
+        "padding-right": "36px"
+      },
+      "quantityInput": {
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px"
+      }
+    },
+    "buttonDestination": "modal",
+    "contents": {
+      "options": false
+    },
+    "text": {
+      "button": "View product"
+    },
+    "googleFonts": [
+      "Quantico"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
     }
-    function ShopifyBuyInit() {
-        var client = ShopifyBuy.buildClient({
-        domain: 'cbf9af-34.myshopify.com',
-        storefrontAccessToken: 'c916ed512e9766f7185e7c78b7ea8b83',
-        });
-        ShopifyBuy.UI.onReady(client).then(function (ui) {
-        ui.createComponent('product', {
-            id: '9597043212573',
-            node: document.getElementById('product-component-1728502061357'),
-            moneyFormat: '%24%7B%7Bamount%7D%7D',
-            options: {
-    "product": {
-        "styles": {
-        "product": {
-            "@media (min-width: 601px)": {
-            "max-width": "calc(25% - 20px)",
-            "margin-left": "20px",
-            "margin-bottom": "50px"
-            }
-        },
-        "button": {
-            "font-family": "Quantico, sans-serif",
-            "font-size": "16px",
-            "padding-top": "16px",
-            "padding-bottom": "16px",
-            "border-radius": "40px",
-            "padding-left": "36px",
-            "padding-right": "36px"
-        },
-        "quantityInput": {
-            "font-size": "16px",
-            "padding-top": "16px",
-            "padding-bottom": "16px"
-        }
-        },
-        "buttonDestination": "modal",
-        "contents": {
-        "options": false
-        },
-        "text": {
-        "button": "View product"
-        },
-        "googleFonts": [
-        "Quantico"
-        ]
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
     },
-    "productSet": {
-        "styles": {
-        "products": {
-            "@media (min-width: 601px)": {
-            "margin-left": "-20px"
-            }
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
         }
-        }
+      },
+      "button": {
+        "font-family": "Quantico, sans-serif",
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px",
+        "border-radius": "40px",
+        "padding-left": "36px",
+        "padding-right": "36px"
+      },
+      "quantityInput": {
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px"
+      }
     },
-    "modalProduct": {
-        "contents": {
-        "img": false,
-        "imgWithCarousel": true,
-        "button": false,
-        "buttonWithQuantity": true
-        },
-        "styles": {
-        "product": {
-            "@media (min-width: 601px)": {
-            "max-width": "100%",
-            "margin-left": "0px",
-            "margin-bottom": "0px"
-            }
-        },
-        "button": {
-            "font-family": "Quantico, sans-serif",
-            "font-size": "16px",
-            "padding-top": "16px",
-            "padding-bottom": "16px",
-            "border-radius": "40px",
-            "padding-left": "36px",
-            "padding-right": "36px"
-        },
-        "quantityInput": {
-            "font-size": "16px",
-            "padding-top": "16px",
-            "padding-bottom": "16px"
-        }
-        },
-        "googleFonts": [
-        "Quantico"
-        ],
-        "text": {
-        "button": "Add to cart"
-        }
-    },
-    "option": {},
-    "cart": {
-        "styles": {
-        "button": {
-            "font-family": "Quantico, sans-serif",
-            "font-size": "16px",
-            "padding-top": "16px",
-            "padding-bottom": "16px",
-            "border-radius": "40px"
-        }
-        },
-        "text": {
-        "total": "Subtotal",
-        "button": "Checkout"
-        },
-        "googleFonts": [
-        "Quantico"
-        ]
-    },
-    "toggle": {
-        "styles": {
-        "toggle": {
-            "font-family": "Quantico, sans-serif"
-        },
-        "count": {
-            "font-size": "16px"
-        }
-        },
-        "googleFonts": [
-        "Quantico"
-        ]
+    "googleFonts": [
+      "Quantico"
+    ],
+    "text": {
+      "button": "Add to cart"
     }
+  },
+  "option": {},
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Quantico, sans-serif",
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px",
+        "border-radius": "40px"
+      }
     },
-        });
-        });
-    }
-    })();
-    /*]]>*/
-    </script>
-
-  <div id='product-component-1728506840286'></div>
-    <script type="text/javascript">
-    /*<![CDATA[*/
-    (function () {
-    var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-    if (window.ShopifyBuy) {
-        if (window.ShopifyBuy.UI) {
-        ShopifyBuyInit();
-        } else {
-        loadScript();
-        }
-    } else {
-        loadScript();
-    }
-    function loadScript() {
-        var script = document.createElement('script');
-        script.async = true;
-        script.src = scriptURL;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-        script.onload = ShopifyBuyInit;
-    }
-    function ShopifyBuyInit() {
-        var client = ShopifyBuy.buildClient({
-        domain: 'cbf9af-34.myshopify.com',
-        storefrontAccessToken: 'c916ed512e9766f7185e7c78b7ea8b83',
-        });
-        ShopifyBuy.UI.onReady(client).then(function (ui) {
-        ui.createComponent('product', {
-            id: '9597043179805',
-            node: document.getElementById('product-component-1728506840286'),
-            moneyFormat: '%24%7B%7Bamount%7D%7D',
-            options: {
-    "product": {
-        "styles": {
-        "product": {
-            "@media (min-width: 601px)": {
-            "max-width": "calc(25% - 20px)",
-            "margin-left": "20px",
-            "margin-bottom": "50px"
-            }
-        },
-        "button": {
-            "font-family": "Quantico, sans-serif",
-            "font-size": "16px",
-            "padding-top": "16px",
-            "padding-bottom": "16px",
-            "border-radius": "40px",
-            "padding-left": "36px",
-            "padding-right": "36px"
-        },
-        "quantityInput": {
-            "font-size": "16px",
-            "padding-top": "16px",
-            "padding-bottom": "16px"
-        }
-        },
-        "buttonDestination": "modal",
-        "contents": {
-        "options": false
-        },
-        "text": {
-        "button": "View product"
-        },
-        "googleFonts": [
-        "Quantico"
-        ]
+    "text": {
+      "total": "Subtotal",
+      "button": "Checkout"
     },
-    "productSet": {
-        "styles": {
-        "products": {
-            "@media (min-width: 601px)": {
-            "margin-left": "-20px"
-            }
-        }
-        }
+    "googleFonts": [
+      "Quantico"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Quantico, sans-serif"
+      },
+      "count": {
+        "font-size": "16px"
+      }
     },
-    "modalProduct": {
-        "contents": {
-        "img": false,
-        "imgWithCarousel": true,
-        "button": false,
-        "buttonWithQuantity": true
-        },
-        "styles": {
-        "product": {
-            "@media (min-width: 601px)": {
-            "max-width": "100%",
-            "margin-left": "0px",
-            "margin-bottom": "0px"
-            }
-        },
-        "button": {
-            "font-family": "Quantico, sans-serif",
-            "font-size": "16px",
-            "padding-top": "16px",
-            "padding-bottom": "16px",
-            "border-radius": "40px",
-            "padding-left": "36px",
-            "padding-right": "36px"
-        },
-        "quantityInput": {
-            "font-size": "16px",
-            "padding-top": "16px",
-            "padding-bottom": "16px"
-        }
-        },
-        "googleFonts": [
-        "Quantico"
-        ],
-        "text": {
-        "button": "Add to cart"
-        }
-    },
-    "option": {},
-    "cart": {
-        "styles": {
-        "button": {
-            "font-family": "Quantico, sans-serif",
-            "font-size": "16px",
-            "padding-top": "16px",
-            "padding-bottom": "16px",
-            "border-radius": "40px"
-        }
-        },
-        "text": {
-        "total": "Subtotal",
-        "button": "Checkout"
-        },
-        "googleFonts": [
-        "Quantico"
-        ]
-    },
-    "toggle": {
-        "styles": {
-        "toggle": {
-            "font-family": "Quantico, sans-serif"
-        },
-        "count": {
-            "font-size": "16px"
-        }
-        },
-        "googleFonts": [
-        "Quantico"
-        ]
-    }
-    },
-        });
-        });
-    }
-    })();
-    /*]]>*/
-    </script>
-
-  <div id='product-component-1728506875574'></div>
+    "googleFonts": [
+      "Quantico"
+    ]
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
     <script type="text/javascript">
     /*<![CDATA[*/
     (function () {
@@ -684,10 +524,6 @@ Welcome to my new store!
 
 Etsy helped me get a start, but now I've transitioned to the web store built in to this website. You can still use Etsy to check the reviews, but I prefer all orders be placed on this site instead of Etsy.
 
-[Pre-Assembled NuclearHazard Atom](https://nuclearquads.etsy.com/listing/1590802322/nuclearhazard-atom-complete-fpv-practice) (2-pilot practice timer)
-
 [Pre-Assembled NuclearHazard Core](https://nuclearquads.etsy.com/listing/1774353764/nuclearhazard-core-complete-fpv-event) (8-pilot event timer)
 
 [Kit NuclearHazard Core](https://nuclearquads.etsy.com/listing/1773191870/nuclearhazard-core-kit-v8) (Use your own case, RXs, and Pi)
-
-[PoE Adapter Kit for NuclearHazard Core](https://nuclearquads.etsy.com/listing/1756301464/poe-kit-for-nuclearhazard-core)

@@ -9,7 +9,10 @@ title: SD Card Flashing
 
 [Win32DiskImager](https://win32diskimager.b-cdn.net/win32diskimager-1.0.0-install.exe)
 
-<a href="https://drive.google.com/file/d/1-0wvB4UB75ikpUQoiZs9ZyMAl8WBjb8d/view" target="_blank">NuclearHazard 4.1.1 SD Card Image</a> (8GB file may take a while to download)
+These are 8GB files so they may take a while to download.
+
+<a href="https://drive.google.com/file/d/1-0wvB4UB75ikpUQoiZs9ZyMAl8WBjb8d/view" target="_blank">NuclearHazard 4.1.1 SD Card Image</a>
+<a href="" target="_blank">NuclearHazard 4.2.1 SD Card Image</a>
 
 ## How to flash
 
@@ -24,7 +27,10 @@ title: SD Card Flashing
 
 ## Downloads
 
-<a href="https://drive.google.com/file/d/1-0wvB4UB75ikpUQoiZs9ZyMAl8WBjb8d/view" target="_blank">NuclearHazard 4.1.1 SD Card Image</a> (8GB file may take a while to download)
+These are 8GB files so they may take a while to download.
+
+<a href="https://drive.google.com/file/d/1-0wvB4UB75ikpUQoiZs9ZyMAl8WBjb8d/view" target="_blank">NuclearHazard 4.1.1 SD Card Image</a>
+<a href="" target="_blank">NuclearHazard 4.2.1 SD Card Image</a>
 
 ## Steps to Flash
 
