@@ -53,7 +53,7 @@ Welcome to my new store!
       <div id='product-component-1736515178933'></div>
     </div>
     <div class="product-wrapper">
-      <div id='product-component-1728506909400'></div>
+      <div id='product-component-1736515464641'></div>
     </div>
   </div>
 
@@ -407,7 +407,7 @@ Welcome to my new store!
           "color": "#78b657"
         },
         "button": {
-          "font-family": "Quantico, sans-serif",
+          "font-family": "Montserrat, sans-serif",
           "font-size": "16px",
           "padding-top": "16px",
           "padding-bottom": "16px",
@@ -469,7 +469,7 @@ Welcome to my new store!
           }
         },
         "button": {
-          "font-family": "Quantico, sans-serif",
+          "font-family": "Montserrat, sans-serif",
           "font-size": "16px",
           "padding-top": "16px",
           "padding-bottom": "16px",
@@ -543,7 +543,7 @@ Welcome to my new store!
     "cart": {
       "styles": {
         "button": {
-          "font-family": "Quantico, sans-serif",
+          "font-family": "Montserrat, sans-serif",
           "font-size": "16px",
           "padding-top": "16px",
           "padding-bottom": "16px",
@@ -604,20 +604,20 @@ Welcome to my new store!
         "button": "Checkout"
       },
       "googleFonts": [
-        "Quantico"
+        "Montserrat"
       ]
     },
     "toggle": {
       "styles": {
         "toggle": {
-          "font-family": "Quantico, sans-serif"
+          "font-family": "Montserrat, sans-serif"
         },
         "count": {
           "font-size": "16px"
         }
       },
       "googleFonts": [
-        "Quantico"
+        "Montserrat"
       ]
     },
     "lineItem": {
