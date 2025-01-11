@@ -11,9 +11,11 @@ All NuclearHazard timers accept 2-5S input (7-21V)
 
 The NuclearHazard Fission can also be powered over 48V PoE (802.3af)
 
-Note: My LED strip takes a max of 20mW per LED, and the rest of the timer takes 6500mW max. This means with 802.3af's limit of 15.4W, we have a maximum LED count of (15400mW-6500mW)/20mW = 445 LEDs
+LED strip note: My LED strip takes a max of 20mW per LED, and the rest of the timer takes 6500mW max. This means with 802.3af's limit of 15.4W, we have a maximum LED count of (15400mW-6500mW)/20mW = 445 LEDs
 
 ## Passwords
+
+Pay attention to the capitalization. Everything is case-sensitive. Note that the username has a capital N AND H.
 
 - Wifi:
     - SSID: `NuclearHazard`
@@ -27,7 +29,7 @@ Note: My LED strip takes a max of 20mW per LED, and the rest of the timer takes 
 
 ## Address when connected to the NuclearHazard wifi
 
-Use this to connect with SSH or to access the web interface.
+Use one of these addresses to connect with SSH or to access the web interface.
 
 `10.42.0.1` or `rotorhazard.local`
 
@@ -53,3 +55,7 @@ Go to the Run page. Select the Heat you added from the dropdown. Turn up your vo
 Go to the Marshal page. Select the pilot that was flying from the dropdown. Drag the top line to just below the highest points of the graph, and drag the bottom line to just above the lowest points. Click Commit Changes, and that will save the calibration.
 
 Go back to the Run page and keep flying!
+
+# Updating RotorHazard
+
+If you used my script to set up the Pi, update by [SSHing](ssh) to the timer and use the <a href="https://github.com/RotorHazard/RotorHazard/blob/main/doc/Software%20Setup.md#updating-an-existing-installation" target="_blank">updating instructions in the RotorHazard docs</a> or, if I have a pre-made OS image on the [flashing page](../troubleshooting/flash.md), reflash the SD card with the newer version.

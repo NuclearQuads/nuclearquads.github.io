@@ -3,11 +3,9 @@ layout: default
 title: Kit Instructions
 ---
 
-# NuclearHazard Core
-
-For the Core kit, use the instructions on [this page](corekitinstructions)
-
 # NuclearHazard Fission Kit Hardware Setup
+
+This is for the newer Fission timer. Instructions for the [NuclearHazard Core kit are here](corekitinstructions.md).
 
 ## Troubleshooting
 Having trouble with your NuclearHazard timer? Look for your issue [Troubleshooting](../troubleshooting/troubleshooting) page. If your problem isn't listed, search or ask on the <a href="https://discord.gg/ANKd2pzBKH" target="_blank">RotorHazard discord</a> for the best response.
@@ -66,7 +64,7 @@ If the RXs are not recognized by RotorHazard, wiggle the carrier cards and repow
 
 Note: the battery slot is not currently used by the software.
 
-# NuclearHazard Fission Kit Software Setup
+# NuclearHazard Fission Kit Software Setup (Method 1/2)
 
 Make sure the timer is powered with the XT60. If you power the Pi directly, the rest of the timer will not have power and that will cause problems.
 
@@ -80,19 +78,11 @@ Or this one which will disable the NuclearHazard wifi network
 
 The default passwords are on the [RotorHazard Usage](../rhusage/rhusage) page.
 
-# Alternative Software Setup
+# Alternative Software Setup (Method 2/2)
 
-If you'd rather download a large pre-made OS image and flash it to the SD card, follow the instructions [here](../troubleshooting/flash).
+If you'd rather download a pre-made OS image and flash it to the SD card, follow the instructions [here](../troubleshooting/flash).
 
 # Extra Instructions (if needed)
-
-## Updating RotorHazard
-
-If you used my script to set up the Pi, update by [SSHing](ssh) to the timer and use the <a href="https://github.com/RotorHazard/RotorHazard/blob/main/doc/Software%20Setup.md#updating-an-existing-installation" target="_blank">updating instructions in the RotorHazard docs</a> or, if I have a pre-made OS image above, reflash the SD card with the newer version.
-
-## POE
-
-The built-in PoE adapter is 802.3af, which can supply up to 15.4 watts of power. Use the system status section in the RotorHazard interface to view the power consumption and stay below 15400mW while using PoE.
 
 ## LED Strip
 

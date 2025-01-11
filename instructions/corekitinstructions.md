@@ -53,13 +53,13 @@ Some of the RX carrier cards included with Version 3 and 4 need to be inserted b
 
 If the RXs are not recognized by RotorHazard, wiggle the carrier cards and repower the timer.
 
-# NuclearHazard Core Kit Software Setup
+# NuclearHazard Fission Kit Software Setup (Method 1/2)
 
 Make sure the timer is powered with the XT60. If you power the Pi directly, the rest of the timer will not have power and that will cause problems.
 
 SSH to the Pi. Use [this guide](ssh) if you're unfamilier with SSH.
 
-Run this command, which will set up the Pi, install RotorHazard 4.2.1, and automatically make the NuclearHazard wifi network if no known network is found.
+Run this command, which will download and run this script
 ```curl -s https://nuclearquads.github.io/files/nhpisetup.sh | bash -s nuclearwifi```
 
 Or this one which will disable the NuclearHazard wifi network
@@ -67,15 +67,11 @@ Or this one which will disable the NuclearHazard wifi network
 
 The default passwords are on the [RotorHazard Usage](../rhusage/rhusage) page.
 
-# Alternative Software Setup
+# Alternative Software Setup (Method 2/2)
 
-If you'd rather download a large pre-made OS image and flash it to the SD card, follow the instructions [here](../troubleshooting/flash).
+If you'd rather download a pre-made OS image and flash it to the SD card, follow the instructions [here](../troubleshooting/flash).
 
 # Extra Instructions (if needed)
-
-## Updating RotorHazard
-
-If you used my script to set up the Pi, update by powering on in range of the wifi you originally set up in the Pi Imager. Then you'll need to find the IP of the Pi (the "iNet" iOS app is what I use). SSH to that IP and use the <a href="https://github.com/RotorHazard/RotorHazard/blob/main/doc/Software%20Setup.md#updating-an-existing-installation" target="_blank">updating instructions in the RotorHazard docs</a>.
 
 ## POE
 
