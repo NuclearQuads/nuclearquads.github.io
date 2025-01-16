@@ -10,6 +10,10 @@ This is for the newer Fission timer. Instructions for the [NuclearHazard Core ki
 ## Troubleshooting
 Having trouble with your NuclearHazard timer? Look for your issue [Troubleshooting](../troubleshooting/troubleshooting) page. If your problem isn't listed, search or ask on the <a href="https://discord.gg/ANKd2pzBKH" target="_blank">RotorHazard discord</a> for the best response.
 
+## Assembly Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tM1rbcJIsiM?si=qCgMjoYQ1aNPzCkt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Required Parts
 
 Along with the kit, you should also have the following ready to use:
