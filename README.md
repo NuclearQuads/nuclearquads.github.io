@@ -2,7 +2,7 @@
 
 Use the navigation bar above or site map below to find what you're looking for.
 
-I have moved my shop from Etsy to a Shopify-based page built into this website. To keep hardware available to international customers, the Etsy listings may still be available, at a slightly higher price to make up for the increased fees that Etsy charges.
+I have moved my shop from Etsy to a Shopify-based page built into this website.
 
 <br>
 
