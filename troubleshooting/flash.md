@@ -5,14 +5,19 @@ title: SD Card Flashing
 
 # Flash NuclearHazard SD Card From Image
 
+This will erase all settings and data, but return your timer to a working, up-to-date state.
+
 ## Downloads
 
 [Etcher](https://etcher.balena.io/#download-etcher)
 
 These are large files so they may take a while to download.
 
-<a href="https://drive.google.com/file/d/1-0wvB4UB75ikpUQoiZs9ZyMAl8WBjb8d/view" target="_blank">NuclearHazard 4.1.1 SD Card Image</a>
-<a href="https://drive.google.com/file/d/1YLG11zD9N2XQsYEvpHgl5F2llO-r19B6/view" target="_blank">NuclearHazard 4.2.1 SD Card Image</a>
+<a href="https://drive.google.com/file/d/1-0wvB4UB75ikpUQoiZs9ZyMAl8WBjb8d/view" target="_blank">Old: NuclearHazard 4.1.1 SD Card Image</a>
+
+<a href="https://drive.google.com/file/d/1YLG11zD9N2XQsYEvpHgl5F2llO-r19B6/view" target="_blank">Recommended: NuclearHazard 4.2.1 SD Card Image</a>
+
+I will create images for new RotorHazard releases as soon as I can.
 
 ## How to flash
 
