@@ -35,7 +35,9 @@ Use one of these addresses to connect with SSH or to access the web interface.
 
 ## Connecting over Ethernet (Cable directly between Pi and PC)
 
-Instructions coming soon
+When a Pi is connected directly to a Mac or Windows computer over an ethernet cable (without a router between), it will automatically attempt to establish a connection. This may take up to 5 minutes sometimes. You shouldn't have to manually set an IP address for the network adapter. 
+
+To connect to the webpage or SSH, use the address `rotorhazard.local`. This may require Apple's [bonjour](https://support.apple.com/en-us/106380) to be installed on Windows computers.
 
 ## Connecting to your home network (works on my 4.2.1+ images or setup script)
 
