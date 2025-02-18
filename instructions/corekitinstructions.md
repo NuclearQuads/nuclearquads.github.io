@@ -53,7 +53,7 @@ Some of the RX carrier cards included with Version 3 and 4 need to be inserted b
 
 If the RXs are not recognized by RotorHazard, wiggle the carrier cards and repower the timer.
 
-# NuclearHazard Fission Kit Software Setup (Method 1/2)
+# NuclearHazard Core Kit Software Setup (Method 1/2)
 
 Make sure the timer is powered with the XT60. If you power the Pi directly, the rest of the timer will not have power and that will cause problems.
 
