@@ -3,7 +3,11 @@ layout: default
 title: Shop
 ---
 
-Welcome to my new store!
+Please contact me if you have any issues. 
+
+<script>document.write('n'+'u'+'c'+'l'+'e'+'a'+'r'+'q'+'u'+'a'+'d'+'s'+'@'+'g'+'m'+'a'+'i'+'l'+'.'+'c'+'o'+'m');</script>
+
+I don't ship to countries with packaging registration regulations similar to Germany's LUCID, but try to ship to reasonable countries. Fully assembled timers are too expensive to ship internationally, except to reliable destinations like Australia.
 
 <html>
 <head>

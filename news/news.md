@@ -3,6 +3,9 @@ layout: default
 title: News
 ---
 
+## 2025-03-02
+Shipping fixed for Fission kits, notes added to store page about international shipping.
+
 ## 2025-01-08
 Preorders for the new NuclearHazard Fission are now open! More instructions, videos, and info are coming soon.
 
