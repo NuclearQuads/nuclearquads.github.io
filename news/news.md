@@ -3,8 +3,11 @@ layout: default
 title: News
 ---
 
+## 2025-03-26
+Pre-assembled Fission timers should be back in stock around 2025-03-31. I'm running low on boards, but the next batch should arrive by 2025-04-11.
+
 ## 2025-03-02
-Shipping fixed for Fission kits, notes added to store page about international shipping.
+Shipping fixed for Fission kits, notes added to store page by about international shipping.
 
 ## 2025-01-08
 Preorders for the new NuclearHazard Fission are now open! More instructions, videos, and info are coming soon.
