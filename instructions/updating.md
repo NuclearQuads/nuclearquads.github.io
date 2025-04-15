@@ -7,6 +7,8 @@ Assuming you used my setup instructions, this will let you update the RotorHazar
 ### Method 1: Connect to the internet (highly recommended)
 
 
+
+
 ### Method 2: Upload from other computer (for Pis without ethernet)
 
 On a windows computer that has internet access and wifi to connect to the timer's access point:

@@ -60,7 +60,7 @@ Go back to the Run page and keep flying!
 
 # Updating RotorHazard
 
-If you used my script to set up the Pi, update by [SSHing](ssh) to the timer and use the <a href="https://github.com/RotorHazard/RotorHazard/blob/main/doc/Software%20Setup.md#updating-an-existing-installation" target="_blank">updating instructions in the RotorHazard docs</a> or, if I have a pre-made OS image on the [flashing page](../troubleshooting/flash.md), reflash the SD card with the newer version.
+If you used my script to set up the Pi, update by [SSHing](../instructions/ssh) to the timer and use the <a href="https://github.com/RotorHazard/RotorHazard/blob/main/doc/Software%20Setup.md#updating-an-existing-installation" target="_blank">updating instructions in the RotorHazard docs</a> or, if I have a pre-made OS image on the [flashing page](../troubleshooting/flash.md), reflash the SD card with the newer version.
 
 # Battery Voltage Monitoring and Alert
 

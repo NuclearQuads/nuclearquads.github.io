@@ -3,6 +3,9 @@ layout: default
 title: News
 ---
 
+## 2025-04-15
+All timers are in stock. RotorHazard 4.3 Beta has been released, I will have a new image for that version after it's out of beta. If you'd like to try out the new features before that, follow the standard updating instructions in the RotorHazard release notes on github.
+
 ## 2025-03-26
 Pre-assembled Fission timers should be back in stock around 2025-03-31. I'm running low on boards, but the next batch should arrive by 2025-04-11.
 
