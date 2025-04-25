@@ -7,11 +7,12 @@ Home of the only commercially available RotorHazard FPV timers.
         * NuclearHazard Core (discontinued) is the older 8-channel model.
         * NuclearHazard Atom (discontinued) is the 2/3 channel Wi-Fi only model.
         * NuclearHazard Fission is the new 4/8 channel model with built-in PoE.
+* RotorHazard is the software that runs on the timers and is not created by me.
 
 <br>
 
 ## Watch the process to assemble your own RotorHazard timer from a kit!
-<iframe width="560" height="315" src="https://youtu.be/tM1rbcJIsiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tM1rbcJIsiM?si=QqjkzVTnWUVutS9C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <br>
 
