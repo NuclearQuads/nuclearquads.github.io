@@ -77,8 +77,8 @@ header h1 {
   font-size: 0; /* Hide the text */
   background: url('../images/nuclearquadslogonobg.png') no-repeat;
   background-size: contain; /* Adjust as needed */
-  height: 300px; /* Set height according to your logo */
-  width: 300px; /* Set width according to your logo */
+  height: 400px; /* Set height according to your logo */
+  width: 400px; /* Set width according to your logo */
   display: inline-block;
   
   /* Remove the existing styling */
@@ -87,12 +87,13 @@ header h1 {
   letter-spacing: normal;
 }
 
-// header h1:before {
-//     content: "☢ ";
-//     font-size: 48px;
-//     font-weight: 300;
-//     font-family: 'Baumans', Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-// }
+header h1:before {
+    content: none;
+    // content: "☢ ";
+    // font-size: 48px;
+    // font-weight: 300;
+    // font-family: 'Baumans', Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+}
 
 header h2 {
     font-size: 20px;
