@@ -1,3 +1,34 @@
+<div id='product-component-1748610122415'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'cbf9af-34.myshopify.com',
+      storefrontAccessToken: 'c916ed512e9766f7185e7c78b7ea8b83',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '9858900099357',
+        node: document.getElementById('product-component-1748610122415'),
+
 ---
 layout: default
 title: Shop
@@ -60,7 +91,7 @@ I don't ship to countries with packaging registration regulations similar to Ger
       <div id='product-component-1736515178933'></div>
     </div>
     <div class="product-wrapper">
-      <div id='product-component-1736515464641'></div>
+      <div id='product-component-1748610122415'></div>
     </div>
   </div>
 
@@ -700,8 +731,8 @@ I don't ship to countries with packaging registration regulations similar to Ger
       });
       ShopifyBuy.UI.onReady(client).then(function (ui) {
         ui.createComponent('product', {
-          id: '9597043114269',
-          node: document.getElementById('product-component-1736515464641'),
+          id: '9858900099357',
+          node: document.getElementById('product-component-1748610122415'),
           moneyFormat: '%24%7B%7Bamount%7D%7D',
           options: {
     "product": {
