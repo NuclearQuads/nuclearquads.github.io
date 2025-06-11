@@ -60,7 +60,7 @@ I don't ship to countries with packaging registration regulations similar to Ger
       <div id='product-component-1736515178933'></div>
     </div>
     <div class="product-wrapper">
-      <div id='product-component-1736515464641'></div>
+      <div id='product-component-1748610122415'></div>
     </div>
   </div>
 
@@ -700,8 +700,8 @@ I don't ship to countries with packaging registration regulations similar to Ger
       });
       ShopifyBuy.UI.onReady(client).then(function (ui) {
         ui.createComponent('product', {
-          id: '9597043114269',
-          node: document.getElementById('product-component-1736515464641'),
+          id: '9858900099357',
+          node: document.getElementById('product-component-1748610122415'),
           moneyFormat: '%24%7B%7Bamount%7D%7D',
           options: {
     "product": {

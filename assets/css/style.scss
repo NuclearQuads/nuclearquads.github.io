@@ -54,36 +54,54 @@ header {
   margin: 0 0 0 0;
 }
 
+// header h1 {
+//   font-size: 46px;
+//   line-height: 1.5;
+//   margin: 0 0 0 -50px;
+//   font-weight: 300;
+//   font-family: 'Baumans', Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+//   color: $conifer;//$header;
+//   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+//                0 0 5px rgba(181, 232, 83, 0.1),
+//                0 0 10px rgba(181, 232, 83, 0.1);
+//   letter-spacing: -1px;
+//   -webkit-font-smoothing: antialiased;
+//   @include media-max-width($container-max-width) {
+//     margin-left: 0;
+//   }
+// }
+
 header h1 {
-  font-size: 46px;
-  line-height: 1.5;
-  margin: 0 0 0 -50px;
-  font-weight: 300;
-  font-family: 'Baumans', Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: $conifer;//$header;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
-  letter-spacing: -1px;
-  -webkit-font-smoothing: antialiased;
-  @include media-max-width($container-max-width) {
-    margin-left: 0;
-  }
+  margin: 0;
+  padding: 0;
+  font-size: 0; /* Hide the text */
+  background: url('../images/nuclearquadslogowebsite.png') no-repeat;
+  background-size: contain; /* Adjust as needed */
+  height: 250px; /* Set height according to your logo */
+  width: 250px; /* Set width according to your logo */
+  display: inline-block;
+  
+  /* Remove the existing styling */
+  text-shadow: none;
+  line-height: normal;
+  letter-spacing: normal;
 }
 
 header h1:before {
-    content: "☢ ";
-    font-size: 48px;
-    font-weight: 300;
-    font-family: 'Baumans', Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+    content: none;
+    // content: "☢ ";
+    // font-size: 48px;
+    // font-weight: 300;
+    // font-family: 'Baumans', Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
 
 header h2 {
-    font-size: 20px;
-    font-weight: 200;
-    color: #666;
-    font-family: 'Baumans', sans-serif;
-    letter-spacing: 0.002em;
+    display: none;
+    // font-size: 20px;
+    // font-weight: 200;
+    // color: #666;
+    // font-family: 'Baumans', sans-serif;
+    // letter-spacing: 0.002em;
   }
 
 #downloads .btn {
