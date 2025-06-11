@@ -1,0 +1,7 @@
+{
+  "latest_version": 2,
+  "build_date": "2025-06-11",
+  "description": "Bug fixes and performance improvements",
+  "min_version": 1,
+  "download_url": "https://nuclearquads.github.io/dash/firmware.bin"
+}
