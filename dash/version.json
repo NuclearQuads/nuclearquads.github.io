@@ -1,7 +1,7 @@
 {
-  "latest_version": 3,
+  "latest_version": 5,
   "build_date": "2025-06-11",
   "description": "nothing",
   "min_version": 1,
-  "download_url": "https://github.com/SpencerGraffunder/NuclearDash/actions/runs/15667960574/artifacts/3331990447"
+  "download_url": "https://github.com/SpencerGraffunder/NuclearDash/releases/download/V5/ESP32.bin"
 }
