@@ -10,10 +10,7 @@ exec > >(tee -a "$LOG_FILE") 2>&1
 # update and install dependencies
 sudo apt-get update
 sudo apt-get upgrade -y
-sudo apt-get install dhcpcd5 python3-venv python3-dev libffi-dev python3-smbus build-essential python3-pip git scons swig python3-rpi.gpio default-jdk-headless libjpeg-dev libopenjp2-7-dev -y
-
-# for VRxC flashing
-python -m pip install esptool --break-system-packages
+sudo apt-get install python3-venv python3-dev libffi-dev python3-smbus build-essential python3-pip git scons swig python3-rpi.gpio default-jdk-headless libjpeg-dev libopenjp2-7-dev -y
 
 # setup pi
 sudo raspi-config nonint do_serial_hw 0
@@ -21,6 +18,7 @@ sudo raspi-config nonint do_serial_cons 1
 sudo raspi-config nonint do_i2c 0
 sudo raspi-config nonint do_ssh 0
 sudo raspi-config nonint do_spi 0
+sudo raspi-config nonint do_wifi_country US
 
 echo "\
 dtoverlay=miniuart-bt
@@ -34,7 +32,7 @@ dtoverlay=spi0-0cs,no_miso
 [pi5]
 dtoverlay=uart0-pi5
 dtoverlay=i2c1-pi5
-dtoverlay=uart3-pi5
+#dtoverlay=uart3-pi5
 
 [pi4]
 dtoverlay=gpio-shutdown,gpio_pin=19,debounce=5000
@@ -57,11 +55,18 @@ VIRTUAL_ENV_DISABLE_PROMPT=1
 source ~/.venv/bin/activate" | sudo tee -a ~/.bashrc
 source ~/.venv/bin/activate
 
+# for VRxC flashing and pi 5 led
+# python -m pip install esptool --break-system-packages 
+pip install rpi5-ws2812 esptool pillow
+
+wget https://rotorhazard.com/install.sh
+sh install.sh
+
 # official way
-wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.3.0 -O temp.zip
-unzip temp.zip
-mv RotorHazard-4.3.0 RotorHazard
-rm temp.zip
+# wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.3.0 -O temp.zip
+# unzip temp.zip
+# mv RotorHazard-4.3.0 RotorHazard
+# rm temp.zip
 
  # git way
 #git clone --depth 1 --branch v4.1.1 https://github.com/RotorHazard/RotorHazard.git
@@ -69,21 +74,6 @@ rm temp.zip
 #cd RotorHazard
 #git fetch origin a759846b12011a394422af9c00b1b89423a3dd70
 #git cherry-pick a759846b12011a394422af9c00b1b89423a3dd70
-
-cd ~/RotorHazard/src/server
-pip install -r requirements.txt
-pip install pillow
-# python -c "import Config; Config.Config(None, 'config.json', 'cfg_bkp')"
-# sed -i 's/"ADMIN_USERNAME": "admin"/"ADMIN_USERNAME": "NuclearHazard"/' config.json
-# sed -i 's/"ADMIN_PASSWORD": "rotorhazard"/"ADMIN_PASSWORD": "nuclearhazard"/' config.json
-# sed -i 's/"SHUTDOWN_BUTTON_GPIOPIN": 18/"SHUTDOWN_BUTTON_GPIOPIN": 19/' config.json
-# sed -i 's/"hue_0": "212"/"hue_0": "100"/' config.json
-# sed -i 's/"sat_0": "55"/"sat_0": "75"/' config.json
-# sed -i 's/"timerName": "RotorHazard"/"timerName": "NuclearHazard"/' config.json
-# sed -i 's/"LED_COUNT": 0/"LED_COUNT": 100/' config.json
-cd ~
-mkdir rh-data
-wget "https://nuclearquads.github.io/files/config.json" -P ~/rh-data
 
 echo "[Unit]
 Description=RotorHazard Server
@@ -98,6 +88,24 @@ WantedBy=multi-user.target" | sudo tee -a /lib/systemd/system/rotorhazard.servic
 sudo chmod 644 /lib/systemd/system/rotorhazard.service
 sudo systemctl daemon-reload
 sudo systemctl enable rotorhazard.service
+
+sudo systemctl start rotorhazard.service
+sleep 20
+sudo systemctl stop rotorhazard.service
+
+# cd ~/RotorHazard/src/server
+# pip install -r requirements.txt
+# python -c "import Config; Config.Config(None, 'config.json', 'cfg_bkp')"
+sed -i 's/"ADMIN_USERNAME": "admin"/"ADMIN_USERNAME": "NuclearHazard"/' rh-data/config.json
+sed -i 's/"ADMIN_PASSWORD": "rotorhazard"/"ADMIN_PASSWORD": "nuclearhazard"/' rh-data/config.json
+sed -i 's/"SHUTDOWN_BUTTON_GPIOPIN": 18/"SHUTDOWN_BUTTON_GPIOPIN": 19/' rh-data/config.json
+sed -i 's/"hue_0": "212"/"hue_0": "100"/' rh-data/config.json
+sed -i 's/"sat_0": "55"/"sat_0": "75"/' rh-data/config.json
+sed -i 's/"timerName": "RotorHazard"/"timerName": "NuclearHazard"/' rh-data/config.json
+sed -i 's/"LED_COUNT": 0/"LED_COUNT": 100/' rh-data/config.json
+cd ~
+# mkdir rh-data
+# wget "https://nuclearquads.github.io/files/config.json" -P ~/rh-data
 
 sudo apt-get install iptables -y
 sudo iptables -A PREROUTING -t nat -p tcp --dport 80 -j REDIRECT --to-ports 5000

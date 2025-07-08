@@ -24,3 +24,15 @@ Testing List (Try on Pi Zero 2, Pi 3, Pi 4, Pi 5)
   Fan works
   NuclearHazard wifi works
   Home wifi works
+
+Make small image:
+  make .img from sd card
+  place image on shared drive
+  from ubuntu:
+    wget https://raw.githubusercontent.com/Drewsif/PiShrink/master/pishrink.sh
+    chmod +x pishrink.sh
+    sudo mv pishrink.sh /usr/local/bin
+    pishrink.sh [-aZ] nh430.img [nh430shrink.img]
+  flash to sd card with etcher
+  upload to google drive
+  update link on website
