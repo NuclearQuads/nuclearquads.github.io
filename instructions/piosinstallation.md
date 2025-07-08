@@ -9,6 +9,8 @@ title: Pi OS Installation
 
 Use the following instructions to flash the SD card with <a href="https://www.raspberrypi.com/software/" target="_blank">Raspberry Pi imager</a>.
 
+Use [Imager v1.8.5](https://github.com/raspberrypi/rpi-imager/releases/tag/v1.8.5) because any newer doesn't allow upper-case in the username, and the rest of my installation scripts require the username to be "NuclearHazard".
+
 ## Select the OS
 
 If you never plan to plug in a monitor directly to the Pi, use the Lite version.
