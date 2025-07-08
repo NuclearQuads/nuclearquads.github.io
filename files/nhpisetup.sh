@@ -13,7 +13,7 @@ sudo apt-get upgrade -y
 sudo apt-get install dhcpcd5 python3-venv python3-dev libffi-dev python3-smbus build-essential python3-pip git scons swig python3-rpi.gpio default-jdk-headless libjpeg-dev libopenjp2-7-dev -y
 
 # for VRxC flashing
-python -m pip install esptool
+python -m pip install esptool --break-system-packages
 
 # setup pi
 sudo raspi-config nonint do_serial_hw 0
@@ -58,9 +58,9 @@ source ~/.venv/bin/activate" | sudo tee -a ~/.bashrc
 source ~/.venv/bin/activate
 
 # official way
-wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.2.1 -O temp.zip
+wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.3.0 -O temp.zip
 unzip temp.zip
-mv RotorHazard-4.2.1 RotorHazard
+mv RotorHazard-4.3.0 RotorHazard
 rm temp.zip
 
  # git way
@@ -73,15 +73,17 @@ rm temp.zip
 cd ~/RotorHazard/src/server
 pip install -r requirements.txt
 pip install pillow
-python -c "import Config; Config.Config(None)"
-sed -i 's/"ADMIN_USERNAME": "admin"/"ADMIN_USERNAME": "NuclearHazard"/' config.json
-sed -i 's/"ADMIN_PASSWORD": "rotorhazard"/"ADMIN_PASSWORD": "nuclearhazard"/' config.json
-sed -i 's/"SHUTDOWN_BUTTON_GPIOPIN": 18/"SHUTDOWN_BUTTON_GPIOPIN": 19/' config.json
-sed -i 's/"hue_0": "212"/"hue_0": "100"/' config.json
-sed -i 's/"sat_0": "55"/"sat_0": "75"/' config.json
-sed -i 's/"timerName": "RotorHazard"/"timerName": "NuclearHazard"/' config.json
-sed -i 's/"LED_COUNT": 0/"LED_COUNT": 100/' config.json
+# python -c "import Config; Config.Config(None, 'config.json', 'cfg_bkp')"
+# sed -i 's/"ADMIN_USERNAME": "admin"/"ADMIN_USERNAME": "NuclearHazard"/' config.json
+# sed -i 's/"ADMIN_PASSWORD": "rotorhazard"/"ADMIN_PASSWORD": "nuclearhazard"/' config.json
+# sed -i 's/"SHUTDOWN_BUTTON_GPIOPIN": 18/"SHUTDOWN_BUTTON_GPIOPIN": 19/' config.json
+# sed -i 's/"hue_0": "212"/"hue_0": "100"/' config.json
+# sed -i 's/"sat_0": "55"/"sat_0": "75"/' config.json
+# sed -i 's/"timerName": "RotorHazard"/"timerName": "NuclearHazard"/' config.json
+# sed -i 's/"LED_COUNT": 0/"LED_COUNT": 100/' config.json
 cd ~
+mkdir rh-data
+wget "https://nuclearquads.github.io/files/config.json" -P ~/rh-data
 
 echo "[Unit]
 Description=RotorHazard Server
