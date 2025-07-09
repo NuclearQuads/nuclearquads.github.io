@@ -49,6 +49,8 @@ core_freq=250
 [all]
 " | sudo tee -a /boot/firmware/config.txt
 
+echo 'SUBSYSTEM=="tty", KERNEL=="ttyAMA0", SYMLINK+="serial0"' | sudo tee /etc/udev/rules.d/99-serial0-fix.rules
+
 python -m venv --system-site-packages .venv
 echo "
 VIRTUAL_ENV_DISABLE_PROMPT=1
