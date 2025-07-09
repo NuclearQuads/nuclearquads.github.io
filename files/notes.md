@@ -32,7 +32,7 @@ Make small image:
     wget https://raw.githubusercontent.com/Drewsif/PiShrink/master/pishrink.sh
     chmod +x pishrink.sh
     sudo mv pishrink.sh /usr/local/bin
-    pishrink.sh [-aZ] nh430.img [nh430shrink.img]
+    pishrink.sh -aZ nh430.img nh430shrink.img
   flash to sd card with etcher
   upload to google drive
   update link on website

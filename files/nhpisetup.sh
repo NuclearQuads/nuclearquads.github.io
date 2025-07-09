@@ -32,7 +32,7 @@ dtoverlay=spi0-0cs,no_miso
 [pi5]
 dtoverlay=uart0-pi5
 dtoverlay=i2c1-pi5
-#dtoverlay=uart3-pi5
+dtoverlay=uart3-pi5
 
 [pi4]
 dtoverlay=gpio-shutdown,gpio_pin=19,debounce=5000
@@ -62,13 +62,7 @@ pip install rpi5-ws2812 esptool pillow
 wget https://rotorhazard.com/install.sh
 sh install.sh
 
-# official way
-# wget https://codeload.github.com/RotorHazard/RotorHazard/zip/v4.3.0 -O temp.zip
-# unzip temp.zip
-# mv RotorHazard-4.3.0 RotorHazard
-# rm temp.zip
-
- # git way
+# git way
 #git clone --depth 1 --branch v4.1.1 https://github.com/RotorHazard/RotorHazard.git
 # in case a single commit is needed to fix something
 #cd RotorHazard
@@ -88,24 +82,6 @@ WantedBy=multi-user.target" | sudo tee -a /lib/systemd/system/rotorhazard.servic
 sudo chmod 644 /lib/systemd/system/rotorhazard.service
 sudo systemctl daemon-reload
 sudo systemctl enable rotorhazard.service
-
-sudo systemctl start rotorhazard.service
-sleep 20
-sudo systemctl stop rotorhazard.service
-
-# cd ~/RotorHazard/src/server
-# pip install -r requirements.txt
-# python -c "import Config; Config.Config(None, 'config.json', 'cfg_bkp')"
-sed -i 's/"ADMIN_USERNAME": "admin"/"ADMIN_USERNAME": "NuclearHazard"/' rh-data/config.json
-sed -i 's/"ADMIN_PASSWORD": "rotorhazard"/"ADMIN_PASSWORD": "nuclearhazard"/' rh-data/config.json
-sed -i 's/"SHUTDOWN_BUTTON_GPIOPIN": 18/"SHUTDOWN_BUTTON_GPIOPIN": 19/' rh-data/config.json
-sed -i 's/"hue_0": "212"/"hue_0": "100"/' rh-data/config.json
-sed -i 's/"sat_0": "55"/"sat_0": "75"/' rh-data/config.json
-sed -i 's/"timerName": "RotorHazard"/"timerName": "NuclearHazard"/' rh-data/config.json
-sed -i 's/"LED_COUNT": 0/"LED_COUNT": 100/' rh-data/config.json
-cd ~
-# mkdir rh-data
-# wget "https://nuclearquads.github.io/files/config.json" -P ~/rh-data
 
 sudo apt-get install iptables -y
 sudo iptables -A PREROUTING -t nat -p tcp --dport 80 -j REDIRECT --to-ports 5000
