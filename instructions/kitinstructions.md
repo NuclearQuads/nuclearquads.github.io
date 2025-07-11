@@ -82,7 +82,9 @@ __You must run both of these commands, letting it reboot after the first__
 
 ```curl -s https://nuclearquads.github.io/files/nhpisetup2.sh | bash```
 
-To disable the NuclearHazard wifi, run ```sudo systemctl disable hotspot.service``` then reboot. 
+To disable the NuclearHazard wifi, run
+
+```sudo systemctl disable hotspot.service && sudo reboot```.
 
 The default passwords are on the [RotorHazard Usage](../rhusage/rhusage) page.
 
