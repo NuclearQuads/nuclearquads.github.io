@@ -997,7 +997,7 @@ The Pi 5 is a speed upgrade but doesn't work with the ESP32 footprint directly o
 
 The Atom was a small alternative to the large Core timer. Since the Fission is fairly smaller/thinner than the Core, and can be built for a similar price to the Atom, it doesn't make sense to keep the two separate products in stock.
 
-To build a Fission as cheap as possible, get the kit ($70), a Pi Zero 2 ($20), a SD Card ($7), and 1 or 2 RX5808 ($13) for a total of $110-$123.
+To build a Fission as cheap as possible, get the kit ($70), a [Pi Zero 2 ($20)](https://www.digikey.com/en/products/detail/raspberry-pi/SC0510/15298147), a [SD Card ($7)](https://www.amazon.com/PNY-Elite-microSDHC-Memory-P-SDU32GU185GW-GE/dp/B07R8GVGN9/ref=sr_1_11), and 1 or 2 [RX5808 ($13)](https://www.aliexpress.us/w/wholesale-rx5808.html) for a total of $110-$123.
 
 ## Etsy Store:
 
