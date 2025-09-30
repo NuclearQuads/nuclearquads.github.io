@@ -3,6 +3,9 @@ layout: default
 title: News
 ---
 
+## 2025-09-29
+Fission timers are in low stock. More stock should be in by 2025-10-13 at the latest.
+
 ## 2025-04-15
 All timers are in stock. RotorHazard 4.3 Beta has been released, I will have a new image for that version after it's out of beta. If you'd like to try out the new features before that, follow the standard updating instructions in the RotorHazard release notes on github.
 

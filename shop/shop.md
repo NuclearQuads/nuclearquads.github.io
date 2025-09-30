@@ -981,6 +981,24 @@ I don't ship to countries with packaging registration regulations similar to Ger
 
 <br>
 
+## FAQs
+
+### How much RAM do I need?
+
+There haven't been good benchmarks to test this yet, but the general consensus is that 2GB is plenty for small events (up to 32 pilots?), 4GB is good for larger events, and 8GB might be useful for the largest events.
+
+### What's the difference between Pi 4 and Pi 5?
+
+The Pi 4 is fast enough that it shouldn't cause performance issues except for possibly the largest of events. The Pi 4 also works with the ESP32 footprint on the Fission PCB, possibly useful for the [VRx Backpack](https://github.com/i-am-grub/VRxC_ELRS). Although a USB-connected ESP32 is recommended if you'd like to use the VRx Backpack.
+
+The Pi 5 is a speed upgrade but doesn't work with the ESP32 footprint directly on the PCB. A USB-connected ESP32 can still be used with the Pi 5.
+
+### Do you sell the Atom still?
+
+The Atom was a small alternative to the large Core timer. Since the Fission is fairly smaller/thinner than the Core, and can be built for a similar price to the Atom, it doesn't make sense to keep the two separate products in stock.
+
+To build a Fission as cheap as possible, get the kit ($70), a Pi Zero 2 ($20), a SD Card ($7), and 1 or 2 RX5808 ($13) for a total of $110-$123.
+
 ## Etsy Store:
 
 I've transitioned to the web store built in to this website. You can still use Etsy to check the reviews.
