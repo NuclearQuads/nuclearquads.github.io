@@ -78,9 +78,9 @@ Run this command, which will download and run these scripts
 
 __You must run both of these commands, letting it reboot after the first__
 
-```curl -s https://nuclearquads.github.io/files/nhpisetup.sh | bash -s nuclearwifi```
+```curl -sL https://nuclearquads.github.io/files/nhpisetup.sh | bash -s nuclearwifi```
 
-```curl -s https://nuclearquads.github.io/files/nhpisetup2.sh | bash```
+```curl -sL https://nuclearquads.github.io/files/nhpisetup2.sh | bash```
 
 To disable the NuclearHazard wifi, run
 

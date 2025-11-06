@@ -26,7 +26,7 @@ Using [scp](https://www.raspberrypi.com/documentation/computers/remote-access.ht
 
 ### Load the flashing script onto the Pi
 
-Put [this script](files/flashbackpack.py) in your home folder
+Put [this script](../files/flashbackpack.py) in your home folder
 
 ### Flash the backpack
 
