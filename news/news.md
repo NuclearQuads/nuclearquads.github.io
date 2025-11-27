@@ -3,6 +3,9 @@ layout: default
 title: News
 ---
 
+## 2025-11-26
+All timers in stock. Thanksgiving sale started! Buy an assembled timer, get one of any item 25% off! I'd recommend a NuclearCounter because it has just become a target for the growing [StarForge project](https://github.com/RaceFPV/StarForgeOS). StarForge allows the hardware to be used as a RotorHazard USB node or as a standalone solo timer. This software is in heavy development and hasn't been fully tested on the NuclearCounter but the basic functions seem to work.
+
 ## 2025-09-29
 Fission timers are in low stock. More stock should be in by 2025-10-13 at the latest.
 
