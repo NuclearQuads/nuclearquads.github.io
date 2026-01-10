@@ -1,9 +1,5 @@
 ---
 layout: default
-title: Shop
----
-
-## Orders placed after 2025/12/12 may be delayed till early January due to Christmas vacation. Message me if you'd like me to try to process your order before then.
 
 Please contact me if you have any issues. 
 
