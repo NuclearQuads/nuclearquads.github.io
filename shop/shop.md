@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Shop
+---
 
 Please contact me if you have any issues. 
 
