@@ -3,6 +3,9 @@ layout: default
 title: News
 ---
 
+## 2026-02-07
+Raspberry Pis have just greatly increased in price. Because of this, along with the increase in RX5808 prices, I have had to increase the price of all Fission timers. Note that timers with less RAM are significantly cheaper and the RotorHazard dev is committed to keeping the software lightweight to avoid needing too much RAM. For all but the largest of events, 4GB is recommended. For small/medium events, even 1-2GB should work without problems. (all according to discussion on the RH discord, untested by NuclearQuads).
+
 ## 2025-11-26
 All timers in stock. Thanksgiving sale started! Buy an assembled timer, get one of any item 25% off! I'd recommend a NuclearCounter because it has just become a target for the growing [StarForge project](https://github.com/RaceFPV/StarForgeOS). StarForge allows the hardware to be used as a RotorHazard USB node or as a standalone solo timer. This software is in heavy development and hasn't been fully tested on the NuclearCounter but the basic functions seem to work.
 
