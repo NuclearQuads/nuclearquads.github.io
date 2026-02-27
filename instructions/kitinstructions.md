@@ -22,6 +22,25 @@ Along with the kit, you should also have the following ready to use:
 - 1-8 RX5808s (Search for `RX5808` on [AliExpress](aliexpress.us/w/wholesale-rx5808.html))
 - XT60 or PoE power supply (battery or other DC power supply works)
 
+### SD Card Recommendations
+
+These are the SD Cards I have personally tested. I haven't had major problems with any of them. The tests were ran with Raspberry Pi's "agnostics" program on a Pi 4.
+
+#### [PNY 32GB Elite (U1 A1)](https://www.amazon.com/PNY-EliteTM-Accessories-microSDHC-Devices/dp/B0G15VV3T5)
+- Sequential write speed 14294 KB/sec (target 10000) - PASS
+- Random write speed 675 IOPS (target 500) - PASS
+- Random read speed 1825 IOPS (target 1500) - PASS
+
+#### [Silicon Power Elite 32GB (U1)](https://www.amazon.com/Silicon-Power-5-Pack-MicroSD-Adapter/dp/B08G8JVZ1Y)
+- Sequential write speed 11289 KB/sec (target 10000) - PASS
+- Random write speed 514 IOPS (target 500) - PASS
+- Random read speed 1634 IOPS (target 1500) - PASS
+
+#### [TEAMGROUP Micro 32GB (U1)](https://www.amazon.com/TEAMGROUP-Micro-UHS-I-SDHC-SDXC/dp/B09WRJJ419)
+- Sequential write speed 14558 KB/sec (target 10000) - PASS
+- Random write speed 588 IOPS (target 500) - PASS
+- Random read speed 1665 IOPS (target 1500) - PASS
+
 ## Case Printing
 
 ### Case STL Files
