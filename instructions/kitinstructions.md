@@ -19,7 +19,7 @@ Having trouble with your NuclearHazard timer? Look for your issue [Troubleshooti
 Along with the kit, you should also have the following ready to use:
 - Raspberry Pi (Version 3 or Zero 2 minimum)
 - 8+GB Micro SD card for the Pi (instructions for installing the OS below)
-- 1-8 RX5808s (Search for `RX5808` on [AliExpress](aliexpress.us/w/wholesale-rx5808.html))
+- 1-8 RX5808s (Search for `RX5808` on [AliExpress](https://aliexpress.us/w/wholesale-rx5808.html), if given the option, select "no audio" and "with SPI")
 - XT60 or PoE power supply (battery or other DC power supply works)
 
 ### SD Card Recommendations
