@@ -17,6 +17,20 @@ LED strip note: My LED strip takes a max of 20mW per LED, and the rest of the ti
 
 Pay attention to the capitalization. Everything is case-sensitive. Note that the username has a capital N AND H.
 
+For pre-built installs with RotorHazard version 4.4 and newer, use these:
+
+- Wifi:
+    - SSID: `nuclear`
+    - Password: `nuclearhazard`
+- SSH Command Line:
+    - Username: `nuclear`
+    - Password: `nuclearhazard`
+- RH Admin:
+    - Username: `nuclear`
+    - Password: `nuclearhazard`
+
+For older pre-built installs, use these:
+
 - Wifi:
     - SSID: `NuclearHazard`
     - Password: `nuclearhazard`
@@ -27,7 +41,7 @@ Pay attention to the capitalization. Everything is case-sensitive. Note that the
     - Username: `NuclearHazard`
     - Password: `nuclearhazard`
 
-## Address when connected to the NuclearHazard wifi
+## Address when connected to the nuclear/NuclearHazard wifi
 
 Use one of these addresses to connect with SSH or to access the web interface.
 
@@ -41,7 +55,7 @@ To connect to the webpage or SSH, use the address `rotorhazard.local`. This may 
 
 ## Connecting to your home network (works on my 4.2.1+ images or setup script)
 
-- Connect to the NuclearHazard network and start a SSH session
+- Connect to the nuclear/NuclearHazard network and start a SSH session
 - Open the wifi_config file by doing `nano wifi_config.txt`
 - Put your wifi name on the first line and your wifi password on the second line
 - Save and close the file by doing `ctrl+o` then `ctrl+x`

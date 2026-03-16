@@ -65,7 +65,7 @@ If your timer powers on and beeps but doesn't let you access the webpage after c
 
 To see what the problem is, you'll need to [SSH to the Pi](../instructions/ssh).
 
-Connect your computer to the NuclearHazard wifi network, open PuTTY, and connect like shown in this picture.
+Connect your computer to the nuclear/NuclearHazard wifi network, open PuTTY, and connect like shown in this picture.
 
 ![PuTTY](../images/putty.png)
 

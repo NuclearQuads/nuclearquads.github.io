@@ -59,17 +59,13 @@ Print without support. If you have a multi-color printer, use the fill painting 
 
 ## Pi OS
 
-Prepare an SD card with a modern, fresh Raspberry Pi OS installation. [Raspberry Pi OS installation instructions here.](../instructions/piosinstallation) Make sure to use NuclearHazard (case sensitive) as the username. Insert the SD card into the Pi, then begin assembling the timer.
+Prepare an SD card with a modern, fresh Raspberry Pi OS installation. [Raspberry Pi OS installation instructions here.](../instructions/piosinstallation) Make sure to use ```nuclear``` (case sensitive) as the username. Insert the SD card into the Pi, then begin assembling the timer.
 
 ## RX Installation
 
 Since I don't sell RXs with the NuclearHazard kits, you'll have to order them and solder them to your Fission PCB. Search AliExpress or Ebay for "RX5808" and choose a cheap listing.
 
-Start by tinning only one pad of each receiver footprint with solder. **Be very careful to not get any solder on the connector pads!** Align all the pads of the RX and reheat the tinned pad to reflow the solder. Keep holding the RX aligned until the solder is hardened. That'll hold it still while you solder the rest of the pads.
-
-Some of the RX carrier cards included with Version 3 and 4 need to be inserted backwards. They can be identified by the bigger alignment dot, or if the RXs aren't changing channels. This has since been fixed and the carrier cards included with Version 5+ can be aligned normally.
-
-If the RXs are not recognized by RotorHazard, wiggle the carrier cards and repower the timer.
+Start by tinning only one pad of each receiver footprint with solder. Align all the pads of the RX and reheat the tinned pad to reflow the solder. Keep holding the RX aligned until the solder is hardened. That'll hold it still while you solder the rest of the pads.
 
 ## Pi/Case Installation
 
@@ -78,14 +74,12 @@ If the RXs are not recognized by RotorHazard, wiggle the carrier cards and repow
 - Install the other 4 standoff screws to secure Pi to the standoffs
 - Place the top part of the case on your workspace upside down
 - Use a soldering iron at 200-250C to press the heat-set inserts into the 4 holes in the case (as shown in instruction video)
-- Place fan (pointing into case) over the fan hole
+- Place fan (blowing into case) over the fan hole
 - Use 4 M3x12 screws to attach the fan, but be very careful to not over-tighten the screws
 - Plug the fan into the fan connector on the PCB (Sometimes it's nice to tie a loose knot in the wire first)
 - Place the PCB upside down into the case, lined up with the case screw holes (Make sure the SD card is in the Pi)
 - Put the lid on
 - Install the last 4 M3x12 screws until tight
-
-Note: the battery slot is not currently used by the software.
 
 # NuclearHazard Fission Kit Software Setup (Method 1/2)
 
@@ -101,7 +95,7 @@ __You must run both of these commands, letting it reboot after the first__
 
 ```curl -sL https://nuclearquads.github.io/files/nhpisetup2.sh | bash```
 
-To disable the NuclearHazard wifi, run
+To disable the nuclear/NuclearHazard wifi, run
 
 ```sudo systemctl disable hotspot.service && sudo reboot```.
 

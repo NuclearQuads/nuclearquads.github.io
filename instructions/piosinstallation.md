@@ -9,7 +9,7 @@ title: Pi OS Installation
 
 Use the following instructions to flash the SD card with <a href="https://www.raspberrypi.com/software/" target="_blank">Raspberry Pi imager</a>.
 
-Use [Imager v1.8.5](https://github.com/raspberrypi/rpi-imager/releases/tag/v1.8.5) because any newer doesn't allow upper-case in the username, and the rest of my installation scripts require the username to be "NuclearHazard".
+I previously recommended the old version of Imager because any newer doesn't allow upper-case in the username, but I have since changed the default username to work with the latest version.
 
 ## Select the OS
 
@@ -19,6 +19,10 @@ If you're using a Pi Zero 1, Pi 1, or Pi 2, you need a 32-bit OS. Otherwise use 
 
 ## Select the options
 
-These are the recommended options. The username must be NuclearHazard to easily complete the later setup. The Wi-Fi settings are important for boards without ethernet so you can still SSH to them.
+Some of the "Customization" options are necessary for the scripts and instructions to work. Use the options in the images below for the relevant options. The username must be ```nuclear``` to easily complete the later setup.
 
-![Options](../images/flashingoptions.PNG)
+![Hostname](../images/hostname.PNG)
+
+![Username](../images/username.PNG)
+
+![SSH](../images/ssh.PNG)

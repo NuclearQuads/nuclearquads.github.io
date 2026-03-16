@@ -62,7 +62,7 @@ source ~/.venv/bin/activate
 pip install rpi5-ws2812 esptool pillow
 
 wget https://rotorhazard.com/install.sh
-sh install.sh
+sh install.sh v4.4.0
 
 # git way
 #git clone --depth 1 --branch v4.1.1 https://github.com/RotorHazard/RotorHazard.git
@@ -75,9 +75,9 @@ echo "[Unit]
 Description=RotorHazard Server
 After=multi-user.target
 [Service]
-User=NuclearHazard
-WorkingDirectory=/home/NuclearHazard/RotorHazard/src/server
-ExecStart=/home/NuclearHazard/.venv/bin/python server.py
+User=nuclear
+WorkingDirectory=/home/nuclear/RotorHazard/src/server
+ExecStart=/home/nuclear/.venv/bin/python server.py
 [Install]
 WantedBy=multi-user.target" | sudo tee -a /lib/systemd/system/rotorhazard.service
 
@@ -96,7 +96,7 @@ sudo apt-get -y install iptables-persistent
 echo '#!/bin/bash
 
 # Define the file path containing SSID and password
-WIFI_CONFIG_FILE="/home/NuclearHazard/wifi_config.txt"
+WIFI_CONFIG_FILE="/home/nuclear/wifi_config.txt"
 
 # Read SSID and password from the configuration file
 SSID=$(awk "NR==1" "$WIFI_CONFIG_FILE")
@@ -117,18 +117,18 @@ if nmcli dev wifi connect "$SSID" password "$PASSWORD" ifname wlan0; then
   exit 0
 else
   echo "Failed to connect to WiFi network: $SSID. Starting hotspot instead."
-  nmcli dev wifi hotspot ifname wlan0 ssid "NuclearHazard" password "nuclearhazard"
+  nmcli dev wifi hotspot ifname wlan0 ssid "nuclear" password "nuclearhazard"
   if [ $? -eq 0 ]; then
-    echo "Hotspot created with SSID: NuclearHazard"
+    echo "Hotspot created with SSID: nuclear"
   else
     echo "Failed to create hotspot."
     exit 1
   fi
-fi' | sudo tee /home/NuclearHazard/hotspot.sh
-sudo chmod +x /home/NuclearHazard/hotspot.sh
+fi' | sudo tee /home/nuclear/hotspot.sh
+sudo chmod +x /home/nuclear/hotspot.sh
 
 echo 'ssid
-password' | tee /home/NuclearHazard/wifi_config.txt
+password' | tee /home/nuclear/wifi_config.txt
 
 echo "[Unit]
 Description=Hotspot Service
@@ -138,8 +138,8 @@ Wants=NetworkManager.service
 [Service]
 Type=simple
 ExecStartPre=/bin/sleep 20
-ExecStart=sudo /home/NuclearHazard/hotspot.sh
-WorkingDirectory=/home/NuclearHazard/
+ExecStart=sudo /home/nuclear/hotspot.sh
+WorkingDirectory=/home/nuclear/
 
 [Install]
 WantedBy=multi-user.target" | sudo tee -a /etc/systemd/system/hotspot.service

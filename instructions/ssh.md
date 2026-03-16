@@ -15,7 +15,7 @@ title: SSH Instructions
    - Connection type: `SSH`
 4. Click "Open"
 5. When prompted:
-   - Username: `NuclearHazard`
+   - Username: `nuclear` or `NuclearHazard` for older versions
    - Password: `nuclearhazard`
 
 ## macOS/Linux (using Terminal)
@@ -23,11 +23,13 @@ title: SSH Instructions
 1. Open Terminal
 2. Connect using command:
 ```bash
-ssh NuclearHazard@rotorhazard.local
+ssh nuclear@rotorhazard.local
 ```
 Or using IP:
 ```bash
-ssh NuclearHazard@10.42.0.1
+ssh nuclear@10.42.0.1
 ```
+Replace `nuclear` with `NuclearHazard` for older versions
+
 3. Type `yes` if asked about fingerprint
 4. Enter password when prompted: `nuclearhazard`
