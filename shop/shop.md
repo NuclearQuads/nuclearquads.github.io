@@ -9,6 +9,8 @@ Please contact me if you have any issues.
 
 I don't ship to countries with packaging registration regulations similar to Germany's LUCID, but try to ship to reasonable countries. Fully assembled timers are too expensive to ship internationally, except to reliable destinations like Australia.
 
+Fission timers are out of stock but I have more on the way. I'll leave orders open but they will not be able to ship till around April 2.
+
 <html>
 <head>
   <style>

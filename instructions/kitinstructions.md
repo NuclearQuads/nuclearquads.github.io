@@ -93,6 +93,8 @@ __You must run both of these commands, letting it reboot after the first__
 
 ```curl -sL https://nuclearquads.github.io/files/nhpisetup.sh | bash -s nuclearwifi```
 
+When you hear the double beep, it's done rebooting
+
 ```curl -sL https://nuclearquads.github.io/files/nhpisetup2.sh | bash```
 
 To disable the nuclear/NuclearHazard wifi, run

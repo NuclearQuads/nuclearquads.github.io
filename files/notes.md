@@ -26,6 +26,7 @@ Testing List (Try on Pi Zero 2, Pi 3, Pi 4, Pi 5)
   Home wifi works
 
 Make small image:
+  add `init=/usr/lib/raspi-config/init_resize.sh` to /boot/firmware/cmdline.txt
   make .img from sd card
   place image on shared drive
   from ubuntu:
@@ -36,3 +37,18 @@ Make small image:
   flash to sd card with etcher
   upload to google drive
   update link on website
+
+SD Card Testing:
+  sudo apt update && sudo apt install agnostics -y
+  sh /usr/share/agnostics/sdtest.sh
+
+  Pi 5
+    PNY Elite A1 Blue
+      Sequential write speed 21905 KB/sec (target 10000) - PASS
+      Random write speed 635 IOPS (target 500) - PASS
+      Random read speed 2124 IOPS (target 1500) - PASS
+    PNY Elite A1 Orange
+      Sequential write speed 21832 KB/sec (target 10000) - PASS
+      Random write speed 648 IOPS (target 500) - PASS
+      Random read speed 2120 IOPS (target 1500) - PASS
+    
