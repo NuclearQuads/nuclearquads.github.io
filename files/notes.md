@@ -26,7 +26,35 @@ Testing List (Try on Pi Zero 2, Pi 3, Pi 4, Pi 5)
   Home wifi works
 
 Make small image:
-  add `init=/usr/lib/raspi-config/init_resize.sh` to /boot/firmware/cmdline.txt
+  paste this into cli
+  ```
+  sudo bash -c '
+  cat > /usr/local/sbin/expand-rootfs.sh << '"'"'EOF'"'"'
+  #!/bin/bash
+  DEV=$(findmnt -n -o SOURCE /)
+  DISK=$(lsblk -no PKNAME "$DEV")
+  PART=$(echo "$DEV" | grep -o "[0-9]*$")
+  growpart /dev/$DISK $PART
+  resize2fs $DEV
+  systemctl disable expand-rootfs.service
+  rm /etc/systemd/system/expand-rootfs.service /usr/local/sbin/expand-rootfs.sh
+  systemctl daemon-reload
+  EOF
+  chmod +x /usr/local/sbin/expand-rootfs.sh
+  cat > /etc/systemd/system/expand-rootfs.service << '"'"'EOF'"'"'
+  [Unit]
+  Description=Expand root filesystem
+  After=local-fs.target
+  [Service]
+  Type=oneshot
+  ExecStart=/usr/local/sbin/expand-rootfs.sh
+  [Install]
+  WantedBy=multi-user.target
+  EOF
+  systemctl daemon-reload && systemctl enable expand-rootfs.service
+  '
+  ```
+
   make .img from sd card
   place image on shared drive
   from ubuntu:
