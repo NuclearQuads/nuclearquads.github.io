@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1784661558|7094791';
+const CACHE_VERSION = '1784946621|10828384';
 /** @type {string} */
 const CACHE_PREFIX = 'Tandora-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
