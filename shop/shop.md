@@ -7,7 +7,7 @@ Please contact me if you have any issues.
 
 <script>document.write('n'+'u'+'c'+'l'+'e'+'a'+'r'+'q'+'u'+'a'+'d'+'s'+'@'+'g'+'m'+'a'+'i'+'l'+'.'+'c'+'o'+'m');</script>
 
-I don't ship to countries with packaging registration regulations similar to Germany's LUCID, but try to ship to reasonable countries. Fully assembled timers are too expensive to ship internationally, except to reliable destinations like Australia.
+I only ship to countries listed at checkout, due to delivery reliability and packaging-law (EPR) restrictions elsewhere. If your country isn't listed, a package forwarder in a supported country may be your best workaround.
 
 <html>
 <head>
