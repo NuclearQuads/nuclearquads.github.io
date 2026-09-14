@@ -24,7 +24,7 @@ Along with the kit, you should also have the following ready to use:
 
 ### SD Card Recommendations
 
-These are the SD Cards I have personally tested. I haven't had major problems with any of them. The tests were ran with Raspberry Pi's "agnostics" program on a Pi 4.
+These are the SD Cards I have personally tested. I haven't had major problems with any of them. The tests were run with Raspberry Pi's "agnostics" program on a Pi 4.
 
 #### [PNY 32GB Elite (U1 A1)](https://www.amazon.com/PNY-EliteTM-Accessories-microSDHC-Devices/dp/B0G15VV3T5)
 - Sequential write speed 14294 KB/sec (target 10000) - PASS
@@ -85,7 +85,7 @@ Start by tinning only one pad of each receiver footprint with solder. Align all 
 
 Make sure the timer is powered with the XT60. If you power the Pi directly, the rest of the timer will not have power and that will cause problems.
 
-SSH to the Pi. Use [this guide](ssh) if you're unfamilier with SSH.
+SSH to the Pi. Use [this guide](ssh) if you're unfamiliar with SSH.
 
 Run this command, which will download and run these scripts
 

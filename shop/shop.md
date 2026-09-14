@@ -9,6 +9,8 @@ Please contact me if you have any issues.
 
 I only ship to countries listed at checkout, due to delivery reliability and packaging-law (EPR) restrictions elsewhere. If your country isn't listed, a package forwarder in a supported country may be your best workaround.
 
+I'm on vacation 9/15-9/20. Orders placed in that time will be shipped 9/21.
+
 <html>
 <head>
   <style>
@@ -983,6 +985,12 @@ I only ship to countries listed at checkout, due to delivery reliability and pac
 
 ## FAQs
 
+### Which timer should I buy?
+
+- **NuclearHazard Fission Kit** — the cheapest way to get a timer. You add your own Raspberry Pi, SD card, RX5808 receivers, and 3D-printed case. Follow the [kit instructions](../instructions/kitinstructions) (an [assembly video](https://www.youtube.com/watch?v=tM1rbcJIsiM) is included).
+- **NuclearHazard Fission - Complete** — pre-assembled and tested, in 4 or 8 channel versions with your choice of Pi 4 or Pi 5 and RAM size. Ships ready to race; see the [RotorHazard Usage page](../rhusage/rhusage) for default logins.
+- **NuclearCounter** — a compact solo counter. Use it as a RotorHazard USB node or standalone with the [StarForge](https://github.com/RaceFPV/StarForgeOS) project.
+
 ### How much RAM do I need?
 
 There haven't been good benchmarks to test this yet, but the general consensus is that 2GB is plenty for small events (up to 32 pilots?), 4GB is good for larger events, and 8GB might be useful for the largest events.
@@ -993,11 +1001,19 @@ The Pi 4 is fast enough that it shouldn't cause performance issues except for po
 
 The Pi 5 is a speed upgrade but doesn't work with the ESP32 footprint directly on the PCB. A USB-connected ESP32 can still be used with the Pi 5.
 
+### Can I use it for MultiGP events?
+
+RotorHazard supports the [MultiGP Toolkit plugin](https://multigp-toolkit.readthedocs.io/), developed with cooperation from MultiGP, which interfaces the timer with MultiGP's RaceSync system. For Global Qualifier events, MultiGP approves specific software versions — check the [approved versions list](https://multigp-toolkit.readthedocs.io/latest/) before your event.
+
 ### Do you sell the Atom still?
 
 The Atom was a small alternative to the large Core timer. Since the Fission is fairly smaller/thinner than the Core, and can be built for a similar price to the Atom, it doesn't make sense to keep the two separate products in stock.
 
-To build a Fission as cheap as possible, get the kit ($70), a [Pi Zero 2 ($20)](https://www.digikey.com/en/products/detail/raspberry-pi/SC0510/15298147), a [SD Card ($7)](https://www.amazon.com/PNY-Elite-microSDHC-Memory-P-SDU32GU185GW-GE/dp/B07R8GVGN9/ref=sr_1_11), and 1 or 2 [RX5808 ($13)](https://www.aliexpress.us/w/wholesale-rx5808.html) for a total of $110-$123.
+To build a Fission as cheaply as possible, get the kit (see the live price above), a [Pi Zero 2](https://www.digikey.com/en/products/detail/raspberry-pi/SC0510/15298147), a [32GB microSD card](https://www.amazon.com/PNY-Elite-microSDHC-Memory-P-SDU32GU185GW-GE/dp/B07R8GVGN9/ref=sr_1_11), and 1 or 2 [RX5808s](https://www.aliexpress.us/w/wholesale-rx5808.html). The kit plus budget parts typically comes out well under the price of a complete timer.
+
+### Where do I get help after buying?
+
+The [Kit Instructions](../instructions/kitinstructions), [Troubleshooting](../troubleshooting/troubleshooting), and [RotorHazard Usage](../rhusage/rhusage) pages cover setup, common problems, and daily operation. For anything not covered there, the <a href="https://discord.gg/ANKd2pzBKH" target="_blank">RotorHazard discord</a> is the best place to ask.
 
 ## Etsy Store:
 

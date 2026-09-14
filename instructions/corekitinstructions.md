@@ -57,7 +57,7 @@ If the RXs are not recognized by RotorHazard, wiggle the carrier cards and repow
 
 Make sure the timer is powered with the XT60. If you power the Pi directly, the rest of the timer will not have power and that will cause problems.
 
-SSH to the Pi. Use [this guide](ssh) if you're unfamilier with SSH.
+SSH to the Pi. Use [this guide](ssh) if you're unfamiliar with SSH.
 
 Run this command, which will download and run this script
 ```curl -s https://nuclearquads.github.io/files/nhpisetup.sh | bash -s nuclearwifi```

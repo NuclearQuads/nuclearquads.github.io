@@ -27,7 +27,7 @@ One possible cause is that the UART stuff isn't setup right in the config.txt be
 
 To check if that's the problem, check the file with `sudo nano /boot/firmware/config.txt`.
 
-If you don't see a line that contains `dtoverlay=gpio-shutdown,gpio_pin=18,debounce=5000` (should show at least once near the bottom), you'll need to paste this block into your terminal.
+If you don't see a line that contains `dtoverlay=gpio-shutdown,gpio_pin=19,debounce=5000` (should show at least once near the bottom), you'll need to paste this block into your terminal.
 
 ```
 echo "dtparam=i2c_baudrate=75000
@@ -40,14 +40,14 @@ dtoverlay=uart0-pi5
 dtoverlay=i2c1-pi5
 
 [pi4]
-dtoverlay=gpio-shutdown,gpio_pin=18,debounce=5000
+dtoverlay=gpio-shutdown,gpio_pin=19,debounce=5000
 
 [pi3]
-dtoverlay=gpio-shutdown,gpio_pin=18,debounce=5000
+dtoverlay=gpio-shutdown,gpio_pin=19,debounce=5000
 core_freq=250
 
 [pi02]
-dtoverlay=gpio-shutdown,gpio_pin=18,debounce=5000
+dtoverlay=gpio-shutdown,gpio_pin=19,debounce=5000
 core_freq=250
 
 [all]" | sudo tee -a /boot/firmware/config.txt
