@@ -1,3 +1,6 @@
+---
+sitemap: false
+---
 NuclearQuads FPV Race Timers
 
 - Powered by the trusted RotorHazard software
