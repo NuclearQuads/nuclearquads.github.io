@@ -1,9 +1,3 @@
----
-layout: default
-title: NuclearQuads - FPV Race Timers Powered by RotorHazard
-description: NuclearQuads builds FPV race event timers powered by open-source RotorHazard software. Buy the NuclearHazard Fission complete timer or kit, or the NuclearCounter.
----
-
 # Welcome to the NuclearQuads website!
 
 Home of the only commercially available RotorHazard FPV timers.
