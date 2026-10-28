@@ -1,7 +1,9 @@
 title: NuclearQuads
 description: FPV race event timers based on the open-source RotorHazard software. NuclearHazard Fission kits, pre-assembled timers, and the NuclearCounter.
 url: https://nuclearquads.com
-logo: /assets/images/nuclearquadslogo.png
+logo:
+  path: /assets/images/nuclearquadslogo.png
+  url: https://nuclearquads.com/assets/images/nuclearquadslogo.png
 remote_theme: pages-themes/hacker@v0.2.0
 plugins:
 - jekyll-remote-theme

@@ -1,3 +1,7 @@
+---
+layout: default
+sitemap: false
+---
 Pinout (GPIO numbers)
 2 SDA to INA219
 3 SDA to INA219
