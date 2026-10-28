@@ -1,3 +1,10 @@
+---
+layout: default
+title: VRx Backpack Firmware Flashing
+description: Flash ExpressLRS firmware to a VRx backpack from a NuclearHazard timer's Raspberry Pi - config.txt overlay, firmware build, and flashing script.
+permalink: /instructions/vrxc/
+---
+
 ### Prep the Pi
 
 add this to boot/firmware/config.txt if not already present

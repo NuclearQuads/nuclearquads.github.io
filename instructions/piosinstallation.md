@@ -1,6 +1,8 @@
 ---
 layout: default
-title: Pi OS Installation
+title: Pi OS Installation for NuclearHazard Timers
+description: Install Raspberry Pi OS on a Micro SD card for a NuclearHazard timer - Raspberry Pi Imager settings, hostname, username, and SSH options.
+permalink: /instructions/piosinstallation/
 ---
 
 # Pi OS Setup

@@ -1,6 +1,8 @@
 ---
 layout: default
-title: Troubleshooting
+title: Troubleshooting NuclearHazard Timers
+description: Fixes for common NuclearHazard FPV race timer problems - RX cards, STM32 flashing, Pi config.txt, and timer webpage access.
+permalink: /troubleshooting/troubleshooting/
 ---
 
 ## Version 8 PCB

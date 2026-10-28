@@ -1,3 +1,10 @@
+---
+layout: default
+title: Legacy Pi Setup Commands (RotorHazard 4.0.1)
+description: Older manual Raspberry Pi setup commands for RotorHazard 4.0.1 on NuclearHazard timers. Superseded by the NuclearHazard SD card images.
+permalink: /instructions/oldsetup/
+---
+
 # Pi Setup Commands (v4.0.1)
 
 If there are any errors, let me know so I can fix them, but also a quick google search should easily solve most of them.

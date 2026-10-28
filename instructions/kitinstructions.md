@@ -1,6 +1,8 @@
 ---
 layout: default
-title: Kit Instructions
+title: NuclearHazard Fission Kit Instructions
+description: Step-by-step guide to building the NuclearHazard Fission FPV race timer kit - required parts, PCB assembly, Pi OS setup, RX5808 receivers, and LED strip wiring.
+permalink: /instructions/kitinstructions/
 ---
 
 # NuclearHazard Fission Kit Hardware Setup

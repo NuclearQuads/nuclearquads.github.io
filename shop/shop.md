@@ -1,6 +1,8 @@
 ---
 layout: default
-title: Shop
+title: NuclearHazard Shop - FPV Race Timers
+description: Buy NuclearHazard FPV race timers - NuclearHazard Fission complete timers and kits, plus the NuclearCounter. Powered by open-source RotorHazard software.
+permalink: /shop/shop/
 ---
 
 Please contact me if you have any issues. 

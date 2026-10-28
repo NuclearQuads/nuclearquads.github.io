@@ -1,6 +1,8 @@
 ---
 layout: default
-title: SSH Instructions
+title: SSH Access to NuclearHazard Timers
+description: Connect to a NuclearHazard timer's Raspberry Pi over SSH using PuTTY on Windows or Terminal on macOS and Linux.
+permalink: /instructions/ssh/
 ---
 
 # Connecting to Raspberry Pi via SSH

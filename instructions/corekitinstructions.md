@@ -1,6 +1,8 @@
 ---
 layout: default
-title: Kit Instructions
+title: NuclearHazard Core Kit Instructions
+description: Step-by-step guide to building the discontinued NuclearHazard Core FPV race timer kit - parts, case printing, RX installation, and software setup.
+permalink: /instructions/corekitinstructions/
 ---
 
 # NuclearHazard Core Kit Hardware Setup

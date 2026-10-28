@@ -1,6 +1,8 @@
 ---
 layout: default
-title: SD Card Flashing
+title: Flash a NuclearHazard SD Card From Image
+description: Re-flash a NuclearHazard timer's SD card from a NuclearHazard SD image to restore a working, up-to-date state. Includes download links and Etcher steps.
+permalink: /troubleshooting/flash/
 ---
 
 # Flash NuclearHazard SD Card From Image

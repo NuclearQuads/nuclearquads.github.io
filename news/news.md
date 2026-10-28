@@ -1,6 +1,8 @@
 ---
 layout: default
-title: News
+title: NuclearHazard News and Updates
+description: Stock updates, pricing, and product news for NuclearHazard FPV race timers built on open-source RotorHazard software.
+permalink: /news/news/
 ---
 
 ## 2026-02-07

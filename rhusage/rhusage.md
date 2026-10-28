@@ -1,6 +1,8 @@
 ---
 layout: default
-title: RotorHazard Usage
+title: RotorHazard Usage Guide for NuclearHazard Timers
+description: Quick reference for NuclearHazard timers - input voltage, default Wi-Fi and SSH logins, ethernet and home network setup, timing, and RotorHazard updates.
+permalink: /rhusage/rhusage/
 ---
 
 # Quick Reference
