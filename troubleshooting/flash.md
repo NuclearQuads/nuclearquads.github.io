@@ -17,9 +17,11 @@ These are large files so they may take a while to download.
 
 ### Recommended
 
-<a href="https://drive.google.com/file/d/1-fwzUYVC9nuhw_Go3VViTwrTVT8x9p14/" target="_blank">NuclearHazard 4.4.0 SD Card Image</a>
+A pre-built image for RotorHazard 4.5.0 is coming. Until then, the quickest way to the newest version is [Method 1 on the kit instructions page](../instructions/kitinstructions): flash a fresh Raspberry Pi OS card and run the setup script, which installs RotorHazard 4.5.0.
 
 ### Old Versions
+
+<a href="https://drive.google.com/file/d/1-fwzUYVC9nuhw_Go3VViTwrTVT8x9p14/" target="_blank">Old: NuclearHazard 4.4.0 SD Card Image</a>
 
 <a href="https://drive.google.com/file/d/1-0wvB4UB75ikpUQoiZs9ZyMAl8WBjb8d/view" target="_blank">Old: NuclearHazard 4.1.1 SD Card Image</a>
 

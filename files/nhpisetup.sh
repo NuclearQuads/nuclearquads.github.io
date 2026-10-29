@@ -62,7 +62,7 @@ source ~/.venv/bin/activate
 pip install rpi5-ws2812 esptool pillow
 
 wget https://rotorhazard.com/install.sh
-sh install.sh v4.4.0
+sh install.sh v4.5.0
 
 # git way
 #git clone --depth 1 --branch v4.1.1 https://github.com/RotorHazard/RotorHazard.git
