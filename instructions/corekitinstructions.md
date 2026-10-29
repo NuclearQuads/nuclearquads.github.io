@@ -62,10 +62,10 @@ Make sure the timer is powered with the XT60. If you power the Pi directly, the 
 SSH to the Pi. Use [this guide](ssh) if you're unfamiliar with SSH.
 
 Run this command, which will download and run this script
-```curl -s https://nuclearquads.github.io/files/nhpisetup.sh | bash -s nuclearwifi```
+```curl -sL https://nuclearquads.github.io/files/nhpisetup.sh | bash -s nuclearwifi```
 
 Or this one which will disable the NuclearHazard wifi network
-```curl -s https://nuclearquads.github.io/files/nhpisetup.sh | bash```
+```curl -sL https://nuclearquads.github.io/files/nhpisetup.sh | bash```
 
 The default passwords are on the [RotorHazard Usage](../rhusage/rhusage) page.
 
